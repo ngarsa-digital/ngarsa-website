@@ -1,0 +1,180 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ngarsa - Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Work+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#004e5e",
+                        "surface-container-highest": "#e1e3e3",
+                        "on-tertiary-fixed": "#042013",
+                        "on-background": "#191c1d",
+                        "tertiary": "#304c3c",
+                        "background": "#f8fafa",
+                        "outline": "#6f797c",
+                        "on-secondary-fixed-variant": "#354a50",
+                        "on-primary-fixed": "#001f27",
+                        "tertiary-fixed": "#caead5",
+                        "surface": "#f8fafa",
+                        "inverse-primary": "#87d1e9",
+                        "primary-container": "#b2ebff",
+                        "tertiary-fixed-dim": "#aeceb9",
+                        "inverse-surface": "#2e3131",
+                        "surface-tint": "#05677c",
+                        "on-tertiary-container": "#bfdfca",
+                        "secondary-fixed-dim": "#b4cad1",
+                        "surface-container-high": "#e6e8e9",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#d8dada",
+                        "surface-container": "#eceeee",
+                        "outline-heavy": "#0b0f10",
+                        "inverse-on-surface": "#eff1f1",
+                        "surface-container-low": "#f2f4f4",
+                        "surface-variant": "#e1e3e3",
+                        "secondary-container": "#cde4eb",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#191c1d",
+                        "tertiary-container": "#dbfce5",
+                        "on-surface-variant": "#3f484c",
+                        "on-tertiary-fixed-variant": "#304d3d",
+                        "on-primary-container": "#99e3fb",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bfc8cc",
+                        "on-secondary-container": "#51666c",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#081e24",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "primary-fixed-dim": "#87d1e9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8fafa",
+                        "primary-fixed": "#b2ebff",
+                        "secondary-fixed": "#d0e6ed",
+                        "secondary": "#4d6268",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "128px",
+                        "brutalist-offset": "8px",
+                        "margin": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Work Sans"],
+                        "display-lg": ["Manrope"],
+                        "display-lg-mobile": ["Manrope"],
+                        "body-md": ["Work Sans"],
+                        "label-bold": ["Work Sans"],
+                        "headline-lg": ["Manrope"],
+                        "headline-xl": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "display-lg": ["88px", { "lineHeight": "84px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "display-lg-mobile": ["56px", { "lineHeight": "54px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center px-gutter py-4 bg-surface dark:bg-inverse-surface max-w-[1280px] mx-auto w-full border-b-4 border-inverse-surface dark:border-surface-variant shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] dark:shadow-[8px_8px_0px_0px_rgba(225,227,227,0.1)] relative">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg font-black text-on-surface dark:text-inverse-on-surface uppercase tracking-tighter" href="#">
+            Ngarsa
+        </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-inverse-primary font-bold border-b-4 border-primary dark:border-inverse-primary pb-1 font-body-md text-body-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-body-md text-body-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-body-md text-body-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-body-md text-body-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<!-- Language Dropdown Trigger (Active State) -->
+<div class="relative">
+<button aria-label="Language Selector" class="w-12 h-12 flex items-center justify-center bg-surface border-4 border-inverse-surface rounded-sm shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all hover:bg-surface-container-low focus:outline-none">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</button>
+<!-- Language Dropdown Menu (ACTIVE/OPEN) -->
+<div class="absolute right-0 top-[calc(100%+8px)] w-48 bg-white border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] z-[100] flex flex-col">
+<button class="w-full text-left px-4 py-3 font-label-bold text-label-bold border-b-4 border-inverse-surface bg-primary-container text-on-primary-container hover:bg-primary hover:text-white transition-colors duration-200 flex justify-between items-center group">
+                        English
+                        <span class="material-symbols-outlined text-[18px] opacity-100">check</span>
+</button>
+<button class="w-full text-left px-4 py-3 font-label-bold text-label-bold text-inverse-surface hover:bg-surface-container-high transition-colors duration-200 flex justify-between items-center group">
+                        Indonesian
+                        <span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-50">arrow_forward</span>
+</button>
+</div>
+</div>
+<a class="hidden sm:inline-flex bg-primary text-white font-label-bold text-label-bold px-6 py-3 border-4 border-inverse-surface shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] hover:bg-surface-tint active:translate-x-1 active:translate-y-1 active:shadow-none transition-all items-center justify-center uppercase tracking-widest" href="#">
+                Let's Talk
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden w-12 h-12 flex items-center justify-center bg-surface border-4 border-inverse-surface rounded-sm shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all hover:bg-surface-container-low focus:outline-none">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow flex flex-col w-full max-w-[1280px] mx-auto px-gutter pt-margin pb-section-gap relative">
+<!-- Hero Section (Neo-Brutalist Pop Art Style) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-section-gap">
+<div class="lg:col-span-7 flex flex-col gap-6 relative z-10">
+<!-- Highlighted Mega Headline -->
+<div class="inline-block self-start bg-primary-container border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] px-6 py-2 -rotate-1 mb-4">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-inverse-surface uppercase">
+                        Digital <br> Impact.
+                    </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface max-w-xl font-bold bg-white p-4 border-4 border-inverse-surface shadow-[4px_4px_0px_0px_rgba(46,49,49,1)]">
+                    We craft raw, authentic digital experiences that cut through the noise. No corporate fluff, just pure creative horsepower.
+                </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<a class="inline-flex bg-primary text-white font-label-bold text-label-bold px-8 py-4 border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] hover:bg-surface-tint active:translate-x-[8px] active:translate-y-[8px] active:shadow-none transition-all uppercase tracking-widest" href="#">
+                        View Our Work
+                    </a>
+<a class="inline-flex bg-white text-inverse-surface font-label-bold text-label-bold px-8 py-4 border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] hover:bg-secondary-container active:translate-x-[8px] active:translate-y-[8px] active:shadow-none transition-all uppercase tracking-widest" href="#">
+                        Our Services
+                    </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[500px] w-full border-4 border-inverse-surface shadow-[12px_12px_0px_0px_rgba(46,49,49,1)] bg-tertiary-container overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="A bold, pop-art style illustration of a creative agency workspace with designers collaborating on a giant digital canvas. High contrast neo-brutalist aesthetic with stark black outlines, vibrant cyan and magenta accents, and sharp architectural angles. The lighting is bright and unapologetic, embodying a raw, creative energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoU0XOcC4AMViCYQUcYMLnjyOiO_yiY3-y1FXMX1FIuC7NC__Zf_QZDxXRj87_jqBM7Nakgazev_r0JkYYeA-SGSxNFeVAGjfK903gD2U66s8MlBiIWT5lG1oVhK43rG7KijXErqv8sGRrzdxCN1OK-p6gKLyDqwAx6wVdwtOlBjdVHk4sY6rpoKBNLdUxYOmI3f-P1lJqXpfXGyFJL2X3698vTJN8h3915Xc3pMQ4QPa1R77Ci2YK">
+<!-- Decorative element -->
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-error rounded-full border-4 border-inverse-surface shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] z-20 animate-pulse"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+
+
+</body></html>

@@ -1,0 +1,137 @@
+{
+  "seo": {
+    "title": "Ngarsa Digital | Agensi Digital Kreatif Indonesia — Web, Pemasaran, Desain & SEO",
+    "description": "Ngarsa Digital adalah agensi digital kreatif yang berbasis di Jatinangor, Sumedang, Jawa Barat, Indonesia. Kami menyediakan pengembangan web, desain grafis, teknologi pemasaran, SEO, dan solusi branding berkualitas tinggi untuk membantu brand lokal berkembang secara digital.",
+    "keywords": "ngarsa, ngarsa digital, agensi digital kreatif, agensi digital indonesia, pengembangan web indonesia, desain grafis, SEO, teknologi pemasaran, branding, periklanan, Jatinangor, Sumedang, Jawa Barat",
+    "ogTitle": "Ngarsa Digital — Agensi Digital Kreatif Indonesia",
+    "ogDescription": "Ngarsa Digital adalah agensi digital kreatif yang berbasis di Jatinangor, Jawa Barat, Indonesia. Kami menyediakan pengembangan web, desain grafis, teknologi pemasaran, SEO, dan solusi branding berkualitas tinggi.",
+    "twitterDescription": "Agensi digital kreatif di Jatinangor, Jawa Barat, Indonesia. Pengembangan web, desain grafis, teknologi pemasaran, SEO & solusi branding untuk brand lokal."
+  },
+  "nav": {
+    "brand": "Ngarsa",
+    "home": "Beranda",
+    "services": "Layanan",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "letsTalk": "Mari Bicara",
+    "closeMenu": "Tutup Menu",
+    "language": "Bahasa"
+  },
+  "home": {
+    "hero": {
+      "title": "Kami menghadirkan <quality>Kualitas</quality> dan Solusi <aiPowered>Bertenaga AI</aiPowered> untuk Anda.",
+      "description": "Di ngarsa digital kami dibuat dengan kualitas untuk mendapatkan keunggulan dari apa yang kami lakukan, dan kami menyediakan solusi untuk menyelesaikan masalah Anda.",
+      "cta": "Hubungi Kami"
+    },
+    "about": {
+      "title": "Kami adalah Agensi Digital Kreatif.",
+      "description1": "Ngarsa Digital adalah Agensi Digital Kreatif. Kami mengkhususkan diri dalam memberikan strategi dan solusi kreatif digital kepada Klien kami.",
+      "note": "*) /ng-rarsa memiliki arti yaitu (depan/mulai/utama)",
+      "cta": "Pelajari Lebih Lanjut"
+    },
+    "services": {
+      "title": "Jelajahi Layanan yang Kami Tawarkan Untuk Anda",
+      "subtitle": "Kami membantu mewujudkan proyek digital Anda menggunakan teknologi modern dan pemikiran desain.",
+      "cards": {
+        "webCreative": "Web & Kreatif",
+        "seoAnalytics": "SEO & Analitik",
+        "marketingTech": "Teknologi Pemasaran",
+        "designBranding": "Desain & Branding",
+        "description": "Kami membuat solusi digital yang sederhana, elegan, dan ikonik."
+      }
+    }
+  },
+  "services": {
+    "title": "Keahlian Kami",
+    "intro": "Kami memadukan kreativitas mentah dengan presisi struktural untuk membangun pengalaman digital yang menolak untuk diabaikan. Selami disiplin inti kami.",
+    "cards": {
+      "webCreative": {
+        "label": "01. Kode & Kerajinan",
+        "title": "Web & Kreatif",
+        "description": "Integritas arsitektural bertemu dengan desain berdampak tinggi. Kami membangun platform yang kokoh dan dapat diskalakan.",
+        "items": ["Pengembangan Full-Stack", "WebGL Interaktif"]
+      },
+      "seoAnalytics": {
+        "label": "02. Visibilitas",
+        "title": "SEO & Analitik",
+        "description": "Data adalah fondasi kami. Kami merekayasa visibilitas melalui SEO struktural."
+      },
+      "marketingTech": {
+        "label": "03. Sistem",
+        "title": "Teknologi Pemasaran",
+        "description": "Mengotomatiskan dampak. Kami mengintegrasikan CRM dan alat otomatisasi."
+      },
+      "designBranding": {
+        "label": "04. Identitas",
+        "title": "Desain & Branding",
+        "description": "Kami tidak melakukan dengan tenang. Latihan branding kami dirancang untuk membentuk identitas yang menuntut perhatian."
+      }
+    },
+    "cta": {
+      "title": "Siap untuk Memulai?",
+      "description": "Berhenti berbaur. Mari kita bangun sesuatu yang struktural, berdampak, dan tidak dapat disangkal milik Anda.",
+      "button": "Mulai Proyek"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "MENDEFINISIKAN ULANG KERAJINAN DIGITAL",
+      "description": "Kami adalah Ngarsa. Agensi kreatif yang dibangun atas keyakinan bahwa kejujuran mentah dan eksekusi berani menembus kebisingan digital."
+    },
+    "mission": {
+      "title": "Misi Kami",
+      "description": "Untuk meningkatkan merek lokal ke standar global melalui komunikasi strategis dan layanan digital berkualitas tinggi. Kami menggabungkan ketelitian analitis dengan kreativitas tanpa kompromi.",
+      "propelling": {
+        "title": "Mendorong Merek",
+        "description": "Kami mengubah visi lokal yang ambisius menjadi kenyataan digital yang tak terbantahkan."
+      }
+    },
+    "team": {
+      "title": "TIM",
+      "members": {
+        "alex": { "name": "Alex Mercer", "role": "Direktur Kreatif", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." },
+        "jordan": { "name": "Jordan Lee", "role": "Pengembang Utama", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." },
+        "sam": { "name": "Sam Taylor", "role": "Strategis Desain", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Hubungi Kami",
+      "description": "Siap mendorong batasan? Kirimkan pesan kepada kami dan mari kita buat sesuatu yang sangat efektif bersama."
+    },
+    "form": {
+      "title": "Kirim Pesan",
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "namePlaceholder": "JOHN DOE",
+      "emailPlaceholder": "JOHN@CONTOH.COM",
+      "messagePlaceholder": "CERITAKAN TENTANG PROYEK ANDA...",
+      "submit": "KIRIM"
+    },
+    "info": {
+      "hq": { "label": "Kantor Pusat", "address": "Jatinangor, West Java Indonesia, 45363" },
+      "email": { "label": "Email", "address": "hello@ngarsa.com" }
+    }
+  },
+  "footer": {
+    "ctaTitle": "Mari Bicara",
+    "ctaDescription": "Punya proyek dalam pikiran? Kirimkan pesan kepada kami melalui halaman kontak dan mari kita bangun sesuatu yang hebat bersama.",
+    "ctaButton": "Hubungi Kami",
+    "partner": "Mitra",
+    "partnerName": "Risyandi",
+    "ourServices": "Layanan Kami",
+    "services": ["Web & Kreatif", "Teknologi Pemasaran", "SEO & Analitik", "Desain & Branding"],
+    "followUs": "Ikuti Kami",
+    "title": "Ngarsa Digital",
+    "address": "Jln. Letda Lukito No.16, Jatinangor, Sumedang - Indonesia.",
+    "copyright": "© 2021 - 2026. Hak Cipta Dilindungi. Dibuat oleh <link>ngarsa.com</link>.",
+    "privacy": "Privasi",
+    "terms": "Syarat"
+  },
+  "language": {
+    "english": "Inggris",
+    "indonesian": "Indonesia"
+  }
+}

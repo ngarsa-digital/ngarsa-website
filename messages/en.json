@@ -1,0 +1,137 @@
+{
+  "seo": {
+    "title": "Ngarsa Digital | Creative Digital Agency Indonesia — Web, Marketing, Design & SEO",
+    "description": "Ngarsa Digital is a creative digital agency based in Jatinangor, Sumedang, West Java, Indonesia. We deliver high-quality web development, graphic design, marketing technology, SEO, and branding solutions to help local brands grow digitally.",
+    "keywords": "ngarsa, ngarsa digital, creative digital agency, digital agency indonesia, web development indonesia, graphic design, SEO, marketing technology, branding, advertising, Jatinangor, Sumedang, West Java",
+    "ogTitle": "Ngarsa Digital — Creative Digital Agency Indonesia",
+    "ogDescription": "Ngarsa Digital is a creative digital agency based in Jatinangor, West Java, Indonesia. We deliver high-quality web development, graphic design, marketing technology, SEO, and branding solutions.",
+    "twitterDescription": "Creative digital agency in Jatinangor, West Java, Indonesia. Web development, graphic design, marketing technology, SEO & branding solutions for local brands."
+  },
+  "nav": {
+    "brand": "Ngarsa",
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk",
+    "closeMenu": "Close Menu",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "We bring <quality>Quality</quality> and <aiPowered>AI-Powered</aiPowered> Solutions to you.",
+      "description": "At ngarsa digital we made with quality for getting excellence of something we do, and we provide solutions to solve your problems.",
+      "cta": "Contact Us"
+    },
+    "about": {
+      "title": "We are a Creative Digital Agency.",
+      "description1": "Ngarsa Digital a Creative Digital Agency. We specialize in giving digital creative strategies and solutions to our Clients.",
+      "note": "*) /ng-rarsa is has meaning namely (front/start/main)",
+      "cta": "Learn More"
+    },
+    "services": {
+      "title": "Explore The Services We Offer For You",
+      "subtitle": "We help realize your digital projects using modern tech and design thinking.",
+      "cards": {
+        "webCreative": "Web & Creative",
+        "seoAnalytics": "SEO & Analytics",
+        "marketingTech": "Marketing Technology",
+        "designBranding": "Design & Branding",
+        "description": "We make digital solutions simple, elegant and iconic."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Expertise",
+    "intro": "We blend raw creativity with structural precision to build digital experiences that refuse to be ignored. Dive into our core disciplines.",
+    "cards": {
+      "webCreative": {
+        "label": "01. Code & Craft",
+        "title": "Web & Creative",
+        "description": "Architectural integrity meets high-impact design. We build robust, scalable platforms.",
+        "items": ["Full-Stack Development", "Interactive WebGL"]
+      },
+      "seoAnalytics": {
+        "label": "02. Visibility",
+        "title": "SEO & Analytics",
+        "description": "Data is our foundation. We engineer visibility through structural SEO."
+      },
+      "marketingTech": {
+        "label": "03. Systems",
+        "title": "Marketing Tech",
+        "description": "Automating impact. We integrate CRMs and automation tools."
+      },
+      "designBranding": {
+        "label": "04. Identity",
+        "title": "Design & Branding",
+        "description": "We don't do quiet. Our branding exercises are designed to carve out identities that demand attention."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Stop blending in. Let's build something structural, impactful, and undeniably yours.",
+      "button": "Initiate Project"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "REDEFINING DIGITAL CRAFT",
+      "description": "We are Ngarsa. A creative agency built on the belief that raw honesty and bold execution cut through the digital noise."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To elevate local brands to global standards through strategic communication and high-quality digital services. We merge analytical rigor with unapologetic creativity.",
+      "propelling": {
+        "title": "Propelling Brands",
+        "description": "We turn ambitious local visions into undeniable digital realities."
+      }
+    },
+    "team": {
+      "title": "THE TEAM",
+      "members": {
+        "alex": { "name": "Alex Mercer", "role": "Creative Director", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." },
+        "jordan": { "name": "Jordan Lee", "role": "Lead Developer", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." },
+        "sam": { "name": "Sam Taylor", "role": "Design Strategist", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "description": "Ready to push boundaries? Drop us a line and let's craft something brutally effective together."
+    },
+    "form": {
+      "title": "Drop a Line",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "JOHN DOE",
+      "emailPlaceholder": "JOHN@EXAMPLE.COM",
+      "messagePlaceholder": "TELL US ABOUT YOUR PROJECT...",
+      "submit": "SEND IT"
+    },
+    "info": {
+      "hq": { "label": "HQ", "address": "Jatinangor, West Java Indonesia, 45363" },
+      "email": { "label": "Email", "address": "hello@ngarsa.com" }
+    }
+  },
+  "footer": {
+    "ctaTitle": "Let's Talk",
+    "ctaDescription": "Have a project in mind? Send us a message through our contact page and let's build something great together.",
+    "ctaButton": "Contact Us",
+    "partner": "Partner",
+    "partnerName": "Risyandi",
+    "ourServices": "Our Services",
+    "services": ["Web & Creative", "Marketing Technology", "SEO & Analytics", "Design & Branding"],
+    "followUs": "Follow Us",
+    "title": "Ngarsa Digital",
+    "address": "Jln. Letda Lukito No.16, Jatinangor, Sumedang - Indonesia.",
+    "copyright": "© 2021 - 2026. All Rights Reserved. Hand Made by <link>ngarsa.com</link>.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "language": {
+    "english": "English",
+    "indonesian": "Indonesian"
+  }
+}
