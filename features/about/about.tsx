@@ -32,7 +32,7 @@ export const About = async () => {
   ];
 
   return (
-    <main className="max-w-[1280px] mx-auto px-margin overflow-hidden">
+    <div className="max-w-[1280px] mx-auto px-margin overflow-hidden">
       <section className="mt-section-gap mb-section-gap relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-7 z-10">
@@ -46,7 +46,7 @@ export const About = async () => {
           <div className="md:col-span-5 relative mt-12 md:mt-0">
             <div className="aspect-square bg-secondary-container brutalist-border brutalist-shadow absolute top-4 left-4 w-full h-full -z-10"></div>
             <div className="relative w-full aspect-[4/5] brutalist-border bg-surface-container-high">
-              <Image src="/images/about-hero.jpg" alt="The Ngarsa Digital team in their studio" fill sizes="(max-width: 768px) 100vw, 40vw" className="object-cover" />
+              <Image src="/images/about-hero.jpg" alt="The Ngarsa Digital team in their studio" fill sizes="(max-width: 768px) 100vw, 40vw" priority className="object-cover" />
             </div>
           </div>
         </div>
@@ -90,6 +90,6 @@ export const About = async () => {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 };
