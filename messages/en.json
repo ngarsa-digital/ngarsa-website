@@ -49,7 +49,10 @@
         "label": "01. Code & Craft",
         "title": "Web & Creative",
         "description": "Architectural integrity meets high-impact design. We build robust, scalable platforms.",
-        "items": ["Full-Stack Development", "Interactive WebGL"]
+        "items": [
+          "Full-Stack Development",
+          "Interactive WebGL"
+        ]
       },
       "seoAnalytics": {
         "label": "02. Visibility",
@@ -71,7 +74,8 @@
       "title": "Ready to Start?",
       "description": "Stop blending in. Let's build something structural, impactful, and undeniably yours.",
       "button": "Initiate Project"
-    }
+    },
+    "explore": "Explore Discipline"
   },
   "about": {
     "hero": {
@@ -89,9 +93,21 @@
     "team": {
       "title": "THE TEAM",
       "members": {
-        "alex": { "name": "Alex Mercer", "role": "Creative Director", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." },
-        "jordan": { "name": "Jordan Lee", "role": "Lead Developer", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." },
-        "sam": { "name": "Sam Taylor", "role": "Design Strategist", "bio": "Expert in digital craftsmanship. Thrives on impact and clarity." }
+        "alex": {
+          "name": "Alex Mercer",
+          "role": "Creative Director",
+          "bio": "Expert in digital craftsmanship. Thrives on impact and clarity."
+        },
+        "jordan": {
+          "name": "Jordan Lee",
+          "role": "Lead Developer",
+          "bio": "Expert in digital craftsmanship. Thrives on impact and clarity."
+        },
+        "sam": {
+          "name": "Sam Taylor",
+          "role": "Design Strategist",
+          "bio": "Expert in digital craftsmanship. Thrives on impact and clarity."
+        }
       }
     }
   },
@@ -111,8 +127,14 @@
       "submit": "SEND IT"
     },
     "info": {
-      "hq": { "label": "HQ", "address": "Jatinangor, West Java Indonesia, 45363" },
-      "email": { "label": "Email", "address": "hello@ngarsa.com" }
+      "hq": {
+        "label": "HQ",
+        "address": "Jatinangor, West Java Indonesia, 45363"
+      },
+      "email": {
+        "label": "Email",
+        "address": "hello@ngarsa.com"
+      }
     }
   },
   "footer": {
@@ -122,7 +144,12 @@
     "partner": "Partner",
     "partnerName": "Risyandi",
     "ourServices": "Our Services",
-    "services": ["Web & Creative", "Marketing Technology", "SEO & Analytics", "Design & Branding"],
+    "services": [
+      "Web & Creative",
+      "Marketing Technology",
+      "SEO & Analytics",
+      "Design & Branding"
+    ],
     "followUs": "Follow Us",
     "title": "Ngarsa Digital",
     "address": "Jln. Letda Lukito No.16, Jatinangor, Sumedang - Indonesia.",
@@ -133,5 +160,511 @@
   "language": {
     "english": "English",
     "indonesian": "Indonesian"
+  },
+  "serviceDetail": {
+    "common": {
+      "backToServices": "All Disciplines",
+      "quickSpecs": "Architectural Specifications",
+      "deliveryLabel": "Delivery Window",
+      "stackLabel": "Core Stack",
+      "architectureLabel": "Architecture",
+      "ownershipLabel": "Ownership Model",
+      "capabilitiesTitle": "Core Capabilities & Deliverables",
+      "capabilitiesSubtitle": "Engineered modules tailored for extreme reliability, velocity, and high conversion.",
+      "roadmapTitle": "Structural Execution Roadmap",
+      "roadmapSubtitle": "Transparent, stepped execution from technical discovery to production hardening.",
+      "phaseLabel": "Phase",
+      "keyOutputLabel": "Milestone Deliverable",
+      "ecosystemTitle": "Tooling & Tech Ecosystem",
+      "videoBadge": "Google AI Visual Simulation",
+      "videoTag": "AI SIMULATION // 4K 60FPS",
+      "videoCaption": "Dynamic interface & structural interaction simulation rendered with Google AI visualization tools.",
+      "faqTitle": "Direct Answers to Key Questions",
+      "faqSubtitle": "No corporate jargon. Clear answers about source ownership, workflow, and technology.",
+      "prevService": "Previous Discipline",
+      "nextService": "Next Discipline",
+      "initiateProject": "Initiate Project",
+      "viewAllServices": "View All Disciplines"
+    },
+    "services": {
+      "web-creative": {
+        "slug": "web-creative",
+        "spec": "SPEC-01 // CODE & CRAFT",
+        "title": "Web & Creative",
+        "tagline": "ARCHITECTURAL INTEGRITY MEETS HIGH-IMPACT INTERACTION",
+        "intro": "We reject boilerplate themes and generic templates. Ngarsa engineers bespoke, lightning-fast web applications, creative eCommerce systems, and interactive digital platforms that perform seamlessly under load and refuse to be ignored.",
+        "quickSpecs": {
+          "delivery": "3–8 Weeks",
+          "stack": "Next.js, TypeScript, Tailwind CSS, WebGL",
+          "architecture": "Headless, Modular & Serverless Edge",
+          "ownership": "100% Client Code & IP Ownership"
+        },
+        "video": {
+          "title": "Spatial Interaction & WebGL Prototype Reel",
+          "description": "Google AI-generated visual preview demonstrating responsive brutalist grid behaviors, 60fps micro-interactions, and real-time canvas rendering.",
+          "videoSrc": "/videos/web-creative.mp4",
+          "poster": "/images/service-web.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. ENGINEERING",
+            "title": "Custom Web Applications & Portals",
+            "description": "High-performance enterprise dashboards, customer portals, and bespoke SaaS platforms built on Next.js, React 19, and TypeScript with strict architectural discipline.",
+            "items": [
+              "Server-Side Rendering & Edge Routing",
+              "Type-Safe Modular API Architecture",
+              "Zero-Latency Client State Management",
+              "Scalable Database & Auth Integrations"
+            ]
+          },
+          {
+            "tag": "02. ARCHITECTURE",
+            "title": "Headless CMS & Content Systems",
+            "description": "Decoupled content platforms that empower non-technical editorial teams while giving developers raw performance and unconstrained layout freedom.",
+            "items": [
+              "Sanity, Strapi & Payload Integrations",
+              "Real-Time Collaborative Visual Previews",
+              "Multi-Language & Global Edge CDN Delivery",
+              "Structured Content Schemas & Taxonomies"
+            ]
+          },
+          {
+            "tag": "03. CREATIVE TECH",
+            "title": "Interactive & 3D WebGL Experiences",
+            "description": "Immersive canvas interactions, 3D product visualizers, and physics-driven micro-interactions that elevate brand storytelling without compromising load times.",
+            "items": [
+              "Three.js & Canvas Visual Engines",
+              "Hardware-Accelerated CSS & Motion",
+              "Dynamic Shader Effects & Particle Fields",
+              "Optimized 60fps Mobile Rendering"
+            ]
+          },
+          {
+            "tag": "04. COMMERCE",
+            "title": "High-Conversion eCommerce",
+            "description": "Custom transactional storefronts engineered for sub-second page loads, effortless mobile checkouts, and seamless payment gateway integrations.",
+            "items": [
+              "Custom Headless Shopify / WooCommerce",
+              "Frictionless Checkout UX Funnels",
+              "Real-Time Stock & ERP Synchronization",
+              "High-Throughput Flash Sale Architecture"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Architectural Discovery",
+            "description": "We map technical requirements, entity-relationship models, user journey maps, and scalability bottlenecks before writing a line of code.",
+            "output": "System Architecture Specification & Technical Blueprint"
+          },
+          {
+            "step": "02",
+            "name": "Component Design & Prototyping",
+            "description": "We draft high-contrast, brutalist design components and interactive wireframes with strict accessibility and responsive constraints.",
+            "output": "Figma Tokenized UI Kit & Motion Prototypes"
+          },
+          {
+            "step": "03",
+            "name": "Full-Stack Development",
+            "description": "Our engineers write clean, typed code with automated linting, test suites, and continuous preview deployments.",
+            "output": "Production Repository with Daily Staging Builds"
+          },
+          {
+            "step": "04",
+            "name": "Hardening, Auditing & Launch",
+            "description": "Exhaustive cross-device QA, Core Web Vitals optimization (100 Lighthouse target), security audits, and automated zero-downtime deployment.",
+            "output": "Live Production Platform & Complete Handover Documentation"
+          }
+        ],
+        "tools": [
+          "Next.js",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS",
+          "Three.js / WebGL",
+          "Node.js",
+          "PostgreSQL",
+          "Vercel"
+        ],
+        "faq": [
+          {
+            "q": "Do we own the full source code once the project is finished?",
+            "a": "Yes, 100%. Upon final delivery and sign-off, all repository rights, design assets, and production deployment credentials are fully transferred to you with zero vendor lock-in."
+          },
+          {
+            "q": "How do you ensure fast page speeds with rich interactive visuals?",
+            "a": "We implement route-level code splitting, static site generation (SSG), edge caching, and lightweight WebGL shaders that only render when visible in the viewport."
+          },
+          {
+            "q": "Can you integrate with our existing backend or database?",
+            "a": "Yes. Whether you use PostgreSQL, Supabase, Laravel, Firebase, or custom GraphQL/REST APIs, we build resilient, typed integration layers."
+          }
+        ],
+        "cta": {
+          "title": "Have a Bold Digital Platform to Build?",
+          "description": "Stop blending in with standard templates. Let's engineer a bespoke digital platform tailored to your exact business scale.",
+          "button": "Initiate Web Project"
+        }
+      },
+      "seo-analytics": {
+        "slug": "seo-analytics",
+        "spec": "SPEC-02 // VISIBILITY & DATA",
+        "title": "SEO & Analytics",
+        "tagline": "VISIBILITY ENGINEERED BY CODE, NOT GUESSWORK",
+        "intro": "True search visibility begins in the server configuration, DOM architecture, and content ontology—not in superficial keyword density. We build rock-solid search infrastructure and accurate data pipelines so you know precisely who arrives and what drives revenue.",
+        "quickSpecs": {
+          "delivery": "4-Week Sprints / Ongoing",
+          "stack": "Google Search Console, GA4, PostHog, Screaming Frog",
+          "architecture": "Semantic Structured Data & Server-Side Tracking",
+          "ownership": "100% Client Ownership of Dashboards & Tag Assets"
+        },
+        "video": {
+          "title": "Search Signal Flow & Behavioral Telemetry Reel",
+          "description": "Google AI simulation visualizing search crawler navigation graphs, semantic entity mapping, and real-time conversion attribution telemetry.",
+          "videoSrc": "/videos/seo-analytics.mp4",
+          "poster": "/images/hero.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. INFRASTRUCTURE",
+            "title": "Technical SEO & Crawl Architecture",
+            "description": "Deep architectural audits eliminating crawl traps, canonical conflicts, render-blocking scripts, and duplicate paths across complex web domains.",
+            "items": [
+              "SSR & Edge Rendering Indexation",
+              "Robots & XML Sitemap Hierarchy",
+              "Clean Canonical & Hreflang Tagging",
+              "Internal Link Graph Optimization"
+            ]
+          },
+          {
+            "tag": "02. PERFORMANCE",
+            "title": "Core Web Vitals & Page Experience",
+            "description": "Microsecond performance engineering to secure straight green 90+ scores across Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS).",
+            "items": [
+              "Render-Blocking Resource Elimination",
+              "Critical CSS Inlining",
+              "Asset Compression & Modern Formats",
+              "INP Interaction Latency Reduction"
+            ]
+          },
+          {
+            "tag": "03. MEASUREMENT",
+            "title": "Advanced GA4 & Server-Side Tracking",
+            "description": "Custom telemetry architectures tracking micro-conversions, customer journeys, and attribution without losing data to ad-blockers.",
+            "items": [
+              "Server-Side Google Tag Manager",
+              "Granular Custom Event Schemes",
+              "E-Commerce Funnel Instrumentation",
+              "Ad-Blocker Resilient First-Party Tracking"
+            ]
+          },
+          {
+            "tag": "04. SEARCH STRATEGY",
+            "title": "Semantic Content & Entity Blueprinting",
+            "description": "Data-driven topical authority clustering that maps high-intent customer search journeys to authoritative, high-ranking pages.",
+            "items": [
+              "Topical Authority Clustering",
+              "Schema.org Rich Snippet Markup",
+              "Search Intent Gap Analysis",
+              "Competitor SERP Vulnerability Audits"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Deep Crawl & Baseline Audit",
+            "description": "We analyze log files, crawling behaviors, index status, and existing tag data to uncover all technical blind spots.",
+            "output": "Comprehensive Technical Audit & Priority Fix Matrix"
+          },
+          {
+            "step": "02",
+            "name": "Architectural Remediation",
+            "description": "Direct code and server-level fixes: sitemaps, canonical tags, schema structured data, and Core Web Vitals optimizations.",
+            "output": "Clean Code PRs & Validated Google Rich Results"
+          },
+          {
+            "step": "03",
+            "name": "Telemetry & Event Instrumentation",
+            "description": "Deploying server-side tracking, custom conversion events, and self-updating executive analytics dashboards.",
+            "output": "Live Executive Dashboard & Verified Event Telemetry"
+          },
+          {
+            "step": "04",
+            "name": "Iterative Scaling & Authority Growth",
+            "description": "Continuous monthly keyword tracking, content tuning, backlink audit, and conversion rate iteration.",
+            "output": "Monthly Search Intelligence & Growth Report"
+          }
+        ],
+        "tools": [
+          "Google Search Console",
+          "Google Analytics 4",
+          "Server-Side GTM",
+          "PostHog",
+          "Screaming Frog",
+          "Ahrefs",
+          "Semrush",
+          "BigQuery"
+        ],
+        "faq": [
+          {
+            "q": "How quickly will we see results from technical SEO improvements?",
+            "a": "Crawl budget optimizations and technical indexation fixes typically show measurable search console improvements within 2–4 weeks; competitive keyword rank gains consolidate over 60–90 days."
+          },
+          {
+            "q": "Why is server-side tracking superior to standard client-side analytics?",
+            "a": "Standard browser tags lose between 20% to 35% of event data due to browser tracking protection and ad-blockers. Server-side tracking routes data through your own custom domain, guaranteeing data fidelity and faster page speeds."
+          },
+          {
+            "q": "Do you touch our codebase directly to implement fixes?",
+            "a": "Yes. Unlike agencies that just hand over PDF reports, our engineers can directly commit optimizations, structured data schemas, and metadata fixes to your repository."
+          }
+        ],
+        "cta": {
+          "title": "Ready to Command Organic Search?",
+          "description": "Stop guessing your visibility. Let's build a deterministic search and measurement engine for your business.",
+          "button": "Initiate SEO Audit"
+        }
+      },
+      "marketing-technology": {
+        "slug": "marketing-technology",
+        "spec": "SPEC-03 // SYSTEMS & AUTOMATION",
+        "title": "Marketing Technology",
+        "tagline": "AUTOMATING IMPACT, SYNCHRONIZING GROWTH",
+        "intro": "Siloed spreadsheets, manual data entry, and broken handoffs bleed revenue. Ngarsa architects cohesive MarTech systems that synchronize your CRM, messaging pipelines, and lead scoring into an autonomous growth engine that operates 24/7.",
+        "quickSpecs": {
+          "delivery": "2–6 Weeks",
+          "stack": "HubSpot, Make, Zapier, Resend, WhatsApp API",
+          "architecture": "Event-Driven Webhooks & Serverless Automations",
+          "ownership": "100% In-House Admin Control & Documented Workflows"
+        },
+        "video": {
+          "title": "Multi-Channel Orchestration & Lead Routing Reel",
+          "description": "Google AI visual simulation demonstrating webhook event propagation, CRM contact routing, and automated omnichannel nurturing sequences.",
+          "videoSrc": "/videos/marketing-technology.mp4",
+          "poster": "/images/about-snippet.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. CRM SYSTEMS",
+            "title": "CRM Architecture & Pipeline Engineering",
+            "description": "Custom pipeline modeling, contact properties, and automated stage progressions in HubSpot, Zoho, or Pipedrive that align sales and marketing.",
+            "items": [
+              "Bespoke Deal Stage Architecture",
+              "Automated Lead Routing & SLA Triggers",
+              "Data Hygiene & De-Duplication Rules",
+              "Custom Sales Activity Dashboards"
+            ]
+          },
+          {
+            "tag": "02. WORKFLOWS",
+            "title": "Omnichannel Automated Journeys",
+            "description": "Trigger-based email, WhatsApp, and SMS sequences that intelligently nurture prospects based on real behavioral interactions.",
+            "items": [
+              "Dynamic Lifecycle Email Campaigns",
+              "WhatsApp Official Cloud API Automation",
+              "Abandonment & Re-engagement Triggers",
+              "Behavioral Lead Segmentation"
+            ]
+          },
+          {
+            "tag": "03. INTEGRATIONS",
+            "title": "Serverless Webhooks & Custom Middleware",
+            "description": "Custom serverless bridge functions (Node.js/Edge) connecting proprietary web apps, payment gateways, and third-party SaaS without vendor lock-in.",
+            "items": [
+              "Make & Zapier Enterprise Recipes",
+              "Custom Webhook Receivers with Retry Logic",
+              "Bi-Directional Database Syncing",
+              "Secure API Token Management"
+            ]
+          },
+          {
+            "tag": "04. BUSINESS INTELLIGENCE",
+            "title": "Attribution & Revenue Pipeline Analytics",
+            "description": "Clear closed-loop reporting connecting initial marketing touchpoints to signed contracts and cash received in your bank account.",
+            "items": [
+              "First/Last-Touch Attribution Models",
+              "Customer Acquisition Cost (CAC) Tracking",
+              "Automated Slack/Discord Deal Alerts",
+              "Executive Revenue Funnel Views"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Systems Audit & Journey Mapping",
+            "description": "We map every customer touchpoint, software license, data silo, and manual bottleneck across your current stack.",
+            "output": "MarTech Architecture Map & Automation Blueprint"
+          },
+          {
+            "step": "02",
+            "name": "Schema Definition & CRM Configuration",
+            "description": "Setting up custom objects, properties, deal pipelines, and permission boundaries.",
+            "output": "Configured Production CRM & Contact Schema"
+          },
+          {
+            "step": "03",
+            "name": "Workflow Build & Webhook Integration",
+            "description": "Constructing webhook endpoints, automated triggers, transactional templates, and fallback handlers.",
+            "output": "Live Automated Sequences & Connected API Pipelines"
+          },
+          {
+            "step": "04",
+            "name": "Stress Testing & Team Enablement",
+            "description": "Simulating hundreds of test leads through every branch, verifying delivery rates, and training your sales team.",
+            "output": "Operating Runbook & Team Training Session"
+          }
+        ],
+        "tools": [
+          "HubSpot",
+          "Make (Integromat)",
+          "Zapier",
+          "Resend",
+          "WhatsApp Cloud API",
+          "Customer.io",
+          "PostgreSQL",
+          "Slack API"
+        ],
+        "faq": [
+          {
+            "q": "Can you integrate our existing website with our CRM without a full redesign?",
+            "a": "Yes. We create lightweight API listeners and webhook endpoints that capture form fills, button clicks, and purchases without requiring a site overhaul."
+          },
+          {
+            "q": "What happens if a third-party webhook fails?",
+            "a": "We build all automations with idempotent retry logic, dead-letter error queues, and instant Slack notifications so no lead is ever lost."
+          },
+          {
+            "q": "Will our team be able to manage the workflows after handover?",
+            "a": "Yes. We design every pipeline with visual clarity and supply step-by-step video runbooks and internal documentation during handoff."
+          }
+        ],
+        "cta": {
+          "title": "Ready to Automate Your Revenue Engine?",
+          "description": "Stop wasting valuable team hours on manual data re-entry. Let's engineer a self-driving marketing infrastructure.",
+          "button": "Initiate MarTech Build"
+        }
+      },
+      "design-branding": {
+        "slug": "design-branding",
+        "spec": "SPEC-04 // IDENTITY & ARTIFACTS",
+        "title": "Design & Branding",
+        "tagline": "WE DON'T DO QUIET. IDENTITIES THAT COMMAND ATTENTION",
+        "intro": "In an online landscape drowned in repetitive corporate minimalism and sterile templates, polite branding is invisible branding. Ngarsa builds fierce visual identities, cohesive design systems, and daring design artifacts that etch your name into your industry.",
+        "quickSpecs": {
+          "delivery": "3–6 Weeks",
+          "stack": "Figma, Adobe Creative Suite, Design Tokens, Glyphs",
+          "architecture": "Modular Atomic Design System",
+          "ownership": "100% Full Vector, Font & Asset Commercial Rights"
+        },
+        "video": {
+          "title": "Kinetic Identity & Design Token Simulation",
+          "description": "Google AI simulation exploring brand typography scales, kinetic logo transformations, and high-contrast design token behaviors across digital devices.",
+          "videoSrc": "/videos/design-branding.mp4",
+          "poster": "/images/about-hero.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. STRATEGY",
+            "title": "Brand Strategy & Distinctive Positioning",
+            "description": "Uncovering your brand archetype, voice, competitive tension, and unapologetic point of view that separates you from generic competitors.",
+            "items": [
+              "Brand Narrative & Voice Architecture",
+              "Competitive Whitespace Analysis",
+              "Brand Persona & Core Values Manifesto",
+              "Tagline & Messaging Playbook"
+            ]
+          },
+          {
+            "tag": "02. IDENTITY",
+            "title": "Visual Identity Systems",
+            "description": "Comprehensive graphic identities featuring primary and secondary marks, bold typographic scales, tailored color palettes, and texture systems.",
+            "items": [
+              "Primary, Secondary & Icon Marks",
+              "High-Contrast Color Token Systems",
+              "Display & Body Typographic Hierarchy",
+              "Signature Patterns & Graphic Assets"
+            ]
+          },
+          {
+            "tag": "03. UI/UX ARCHITECTURE",
+            "title": "Component-Driven Figma Design Systems",
+            "description": "Scalable design systems with auto-layout, interactive variants, light/dark modes, and tokenized variables ready for immediate front-end development.",
+            "items": [
+              "Atomic UI Component Library",
+              "Responsive Screen Layouts (Desktop & Mobile)",
+              "Interactive Micro-Animation Specs",
+              "Design Token Mapping for Developers"
+            ]
+          },
+          {
+            "tag": "04. ARTIFACTS",
+            "title": "High-Impact Collateral & Brand Artifacts",
+            "description": "Tangible and digital assets that maintain your brand's uncompromising presence across every real-world touchpoint.",
+            "items": [
+              "Pitch Decks & Keynote Presentations",
+              "Social Media Asset Engines & Templates",
+              "Physical Collateral & Packaging Specs",
+              "Comprehensive Brand Guidelines Book"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Immersion & Strategic Tension",
+            "description": "Interviews, market audits, and visual territory mapping to define the single sharp angle your brand will own.",
+            "output": "Strategic Brand Brief & Moodboards"
+          },
+          {
+            "step": "02",
+            "name": "Conceptual Directions",
+            "description": "Developing two distinct, uncompromising creative directions with logos, typography, color palettes, and real-world mockups.",
+            "output": "Two Distinct Brand Territory Decks"
+          },
+          {
+            "step": "03",
+            "name": "System Crafting & Refinement",
+            "description": "Iterating the chosen direction into an exhaustive visual identity, responsive Figma library, and digital asset suite.",
+            "output": "Complete Figma System & Component Specs"
+          },
+          {
+            "step": "04",
+            "name": "Master Asset Delivery",
+            "description": "Exporting vector assets (SVG, EPS, PDF), web font packages, social templates, and a comprehensive Brand Guideline Bible.",
+            "output": "Master Asset Archive & Brand Guidelines Book"
+          }
+        ],
+        "tools": [
+          "Figma",
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "After Effects",
+          "Glyphs",
+          "Design Tokens"
+        ],
+        "faq": [
+          {
+            "q": "Do you just create logos, or full brand systems?",
+            "a": "We create comprehensive identity systems. A logo without typography rules, color philosophy, layout principles, and voice guidelines is just a picture—we give you a complete visual language."
+          },
+          {
+            "q": "Are the Figma files ready for our developers to build directly?",
+            "a": "Yes. All components use Figma variables, auto-layout 5.0, standardized spacing tokens, and semantic color names matching modern CSS frameworks."
+          },
+          {
+            "q": "Do we get full copyright and commercial usage rights?",
+            "a": "Yes. Upon project completion, you receive unrestricted worldwide commercial rights to all delivered logos, vectors, and custom artwork."
+          }
+        ],
+        "cta": {
+          "title": "Ready to Carve Out an Undeniable Identity?",
+          "description": "Stop blending in with standard templates. Let's craft a brand that refuses to be ignored.",
+          "button": "Initiate Branding Project"
+        }
+      }
+    }
   }
 }

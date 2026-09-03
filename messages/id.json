@@ -49,7 +49,10 @@
         "label": "01. Kode & Kerajinan",
         "title": "Web & Kreatif",
         "description": "Integritas arsitektural bertemu dengan desain berdampak tinggi. Kami membangun platform yang kokoh dan dapat diskalakan.",
-        "items": ["Pengembangan Full-Stack", "WebGL Interaktif"]
+        "items": [
+          "Pengembangan Full-Stack",
+          "WebGL Interaktif"
+        ]
       },
       "seoAnalytics": {
         "label": "02. Visibilitas",
@@ -71,7 +74,8 @@
       "title": "Siap untuk Memulai?",
       "description": "Berhenti berbaur. Mari kita bangun sesuatu yang struktural, berdampak, dan tidak dapat disangkal milik Anda.",
       "button": "Mulai Proyek"
-    }
+    },
+    "explore": "Pelajari Layanan"
   },
   "about": {
     "hero": {
@@ -89,9 +93,21 @@
     "team": {
       "title": "TIM",
       "members": {
-        "alex": { "name": "Alex Mercer", "role": "Direktur Kreatif", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." },
-        "jordan": { "name": "Jordan Lee", "role": "Pengembang Utama", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." },
-        "sam": { "name": "Sam Taylor", "role": "Strategis Desain", "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan." }
+        "alex": {
+          "name": "Alex Mercer",
+          "role": "Direktur Kreatif",
+          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
+        },
+        "jordan": {
+          "name": "Jordan Lee",
+          "role": "Pengembang Utama",
+          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
+        },
+        "sam": {
+          "name": "Sam Taylor",
+          "role": "Strategis Desain",
+          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
+        }
       }
     }
   },
@@ -111,8 +127,14 @@
       "submit": "KIRIM"
     },
     "info": {
-      "hq": { "label": "Kantor Pusat", "address": "Jatinangor, West Java Indonesia, 45363" },
-      "email": { "label": "Email", "address": "hello@ngarsa.com" }
+      "hq": {
+        "label": "Kantor Pusat",
+        "address": "Jatinangor, West Java Indonesia, 45363"
+      },
+      "email": {
+        "label": "Email",
+        "address": "hello@ngarsa.com"
+      }
     }
   },
   "footer": {
@@ -122,7 +144,12 @@
     "partner": "Mitra",
     "partnerName": "Risyandi",
     "ourServices": "Layanan Kami",
-    "services": ["Web & Kreatif", "Teknologi Pemasaran", "SEO & Analitik", "Desain & Branding"],
+    "services": [
+      "Web & Kreatif",
+      "Teknologi Pemasaran",
+      "SEO & Analitik",
+      "Desain & Branding"
+    ],
     "followUs": "Ikuti Kami",
     "title": "Ngarsa Digital",
     "address": "Jln. Letda Lukito No.16, Jatinangor, Sumedang - Indonesia.",
@@ -133,5 +160,511 @@
   "language": {
     "english": "Inggris",
     "indonesian": "Indonesia"
+  },
+  "serviceDetail": {
+    "common": {
+      "backToServices": "Semua Layanan",
+      "quickSpecs": "Spesifikasi Arsitektural",
+      "deliveryLabel": "Estimasi Waktu",
+      "stackLabel": "Tech Stack Inti",
+      "architectureLabel": "Arsitektur",
+      "ownershipLabel": "Model Kepemilikan",
+      "capabilitiesTitle": "Kapabilitas Inti & Hasil Kerja",
+      "capabilitiesSubtitle": "Modul rekayasa digital yang dirancang untuk keandalan ekstrem, kecepatan, dan konversi tinggi.",
+      "roadmapTitle": "Peta Jalan Eksekusi Struktural",
+      "roadmapSubtitle": "Tahapan eksekusi transparan dari penemuan teknis hingga kesiapan peluncuran produksi.",
+      "phaseLabel": "Fase",
+      "keyOutputLabel": "Deliverable Utama",
+      "ecosystemTitle": "Ekosistem & Alat Kerja",
+      "videoBadge": "Simulasi Visual Google AI",
+      "videoTag": "SIMULASI AI // 4K 60FPS",
+      "videoCaption": "Simulasi visual antarmuka dan interaksi struktural yang dirender menggunakan teknologi visual Google AI.",
+      "faqTitle": "Jawaban Langsung untuk Pertanyaan Penting",
+      "faqSubtitle": "Tanpa jargon korporat berbelit-belit. Jawaban jelas seputar kepemilikan kode, alur kerja, dan teknologi.",
+      "prevService": "Layanan Sebelumnya",
+      "nextService": "Layanan Berikutnya",
+      "initiateProject": "Mulai Proyek",
+      "viewAllServices": "Lihat Semua Layanan"
+    },
+    "services": {
+      "web-creative": {
+        "slug": "web-creative",
+        "spec": "SPEC-01 // KODE & KERAJINAN",
+        "title": "Web & Kreatif",
+        "tagline": "INTEGRITAS ARSITEKTUR BERTEMU INTERAKSI BERDAMPAK TINGGI",
+        "intro": "Kami menolak tema template generik. Ngarsa merekayasa aplikasi web kustom yang super cepat, sistem eCommerce kreatif, dan platform digital interaktif yang siap menangani beban tinggi serta langsung memikat perhatian.",
+        "quickSpecs": {
+          "delivery": "3–8 Minggu",
+          "stack": "Next.js, TypeScript, Tailwind CSS, WebGL",
+          "architecture": "Headless, Modular & Serverless Edge",
+          "ownership": "100% Hak Milik Kode & IP Milik Klien"
+        },
+        "video": {
+          "title": "Reel Prototipe Interaksi Spasial & WebGL",
+          "description": "Pratinjau visual yang dihasilkan Google AI untuk menampilkan perilaku grid brutalist responsif, interaksi mikro 60fps, dan rendering canvas real-time.",
+          "videoSrc": "/videos/web-creative.mp4",
+          "poster": "/images/service-web.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. REKAYASA",
+            "title": "Aplikasi Web & Portal Kustom",
+            "description": "Dashboard perusahaan berkinerja tinggi, portal klien, dan platform SaaS khusus yang dibangun dengan Next.js, React 19, dan TypeScript dengan disiplin arsitektur ketat.",
+            "items": [
+              "Server-Side Rendering & Edge Routing",
+              "Arsitektur API Modular Type-Safe",
+              "Manajemen State Klien Zero-Latency",
+              "Integrasi Database & Autentikasi Skalabel"
+            ]
+          },
+          {
+            "tag": "02. ARSITEKTUR",
+            "title": "Arsitektur Headless CMS",
+            "description": "Platform konten terpisah yang memberdayakan tim redaksi non-teknis sambil memberikan kebebasan desain dan performa maksimal bagi pengembang.",
+            "items": [
+              "Integrasi Sanity, Strapi & Payload",
+              "Pratinjau Visual Kolaboratif Real-Time",
+              "Dukungan Multi-Bahasa & Pengiriman Global CDN",
+              "Skema & Taksonomi Konten Terstruktur"
+            ]
+          },
+          {
+            "tag": "03. TEKNOLOGI KREATIF",
+            "title": "Pengalaman WebGL & 3D Interaktif",
+            "description": "Interaksi canvas imersif, visualisator produk 3D, dan animasi mikro berbasis fisika yang memperkuat narasi merek tanpa memperlambat waktu muat.",
+            "items": [
+              "Mesin Visual Three.js & HTML5 Canvas",
+              "Animasi Akselerasi Hardware CSS & Motion",
+              "Efek Shader Dinamis & Partikel",
+              "Performa Rendering Mobile 60fps yang Dioptimalkan"
+            ]
+          },
+          {
+            "tag": "04. COMMERCE",
+            "title": "eCommerce Berkonversi Tinggi",
+            "description": "Toko online kustom yang direkayasa untuk waktu muat di bawah satu detik, alur checkout mobile yang mulus, dan integrasi payment gateway tanpa hambatan.",
+            "items": [
+              "Headless Shopify / WooCommerce Kustom",
+              "Corong Checkout UX Tanpa Gesekan",
+              "Sinkronisasi Stok & ERP Real-Time",
+              "Arsitektur Tahan Beban Flash Sale Tinggi"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Penemuan Arsitektural",
+            "description": "Kami memetakan kebutuhan teknis, relasi data, alur pengguna, dan potensi hambatan skalabilitas sebelum menulis satu baris kode pun.",
+            "output": "Spesifikasi Arsitektur Sistem & Cetak Biru Teknis"
+          },
+          {
+            "step": "02",
+            "name": "Desain Komponen & Pembuatan Prototipe",
+            "description": "Kami menyusun komponen desain brutalist berkontras tinggi dan wireframe interaktif dengan standar aksesibilitas dan responsivitas ketat.",
+            "output": "Figma UI Kit Bertoken & Prototipe Interaktif"
+          },
+          {
+            "step": "03",
+            "name": "Pengembangan Full-Stack",
+            "description": "Pengembang kami menulis kode ber-tipe yang bersih dengan pengujian otomatis, linting, dan deployment pratinjau berkelanjutan.",
+            "output": "Repositori Produksi dengan Staging Build Harian"
+          },
+          {
+            "step": "04",
+            "name": "Pengujian, Audit & Peluncuran",
+            "description": "Pengujian lintas perangkat menyeluruh, optimasi Core Web Vitals (target 100 Lighthouse), audit keamanan, dan deployment zero-downtime.",
+            "output": "Platform Produksi Live & Dokumentasi Serah Terima Lengkap"
+          }
+        ],
+        "tools": [
+          "Next.js",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS",
+          "Three.js / WebGL",
+          "Node.js",
+          "PostgreSQL",
+          "Vercel"
+        ],
+        "faq": [
+          {
+            "q": "Apakah kami memiliki seluruh kode sumber setelah proyek selesai?",
+            "a": "Ya, 100%. Setelah serah terima final, seluruh repositori kode, aset desain, dan akses deployment produksi sepenuhnya diserahkan kepada Anda tanpa penguncian vendor."
+          },
+          {
+            "q": "Bagaimana cara memastikan kecepatan halaman tetap tinggi meski ada visual interaktif?",
+            "a": "Kami menerapkan pemisahan kode di tingkat rute (code splitting), pembuatan situs statis (SSG), edge caching, dan shader WebGL ringan yang hanya merender saat terlihat di layar."
+          },
+          {
+            "q": "Bisakah Anda berintegrasi dengan backend atau database kami yang sudah ada?",
+            "a": "Tentu saja. Baik Anda menggunakan PostgreSQL, Supabase, Laravel, Firebase, maupun custom API GraphQL/REST, kami membangun lapisan integrasi yang tangguh dan aman."
+          }
+        ],
+        "cta": {
+          "title": "Punya Visi Platform Digital yang Berani?",
+          "description": "Berhenti menggunakan template pasaran. Mari kita bangun platform digital khusus yang disesuaikan dengan skala bisnis Anda.",
+          "button": "Mulai Proyek Web"
+        }
+      },
+      "seo-analytics": {
+        "slug": "seo-analytics",
+        "spec": "SPEC-02 // VISIBILITAS & DATA",
+        "title": "SEO & Analitik",
+        "tagline": "VISIBILITAS YANG DIREKAYASA LEWAT KODE, BUKAN ASUMSI",
+        "intro": "Performa pencarian sesungguhnya berakar dari konfigurasi server, struktur DOM, dan ontologi konten—bukan sekadar penumpukan kata kunci. Kami membangun visibilitas pencarian struktural dan pipeline data presisi agar Anda tahu persis siapa pengunjung Anda dan apa yang mendorong transaksi.",
+        "quickSpecs": {
+          "delivery": "Sprint 4 Minggu / Berkelanjutan",
+          "stack": "Google Search Console, GA4, PostHog, Screaming Frog",
+          "architecture": "Structured Data Semantik & Pelacakan Server-Side",
+          "ownership": "100% Hak Milik Dashboard & Aset Pelacakan"
+        },
+        "video": {
+          "title": "Reel Aliran Sinyal Pencarian & Telemetri Perilaku",
+          "description": "Simulasi visual Google AI yang memvisualisasikan grafik penjelajahan crawler, pemetaan entitas semantik, dan telemetri atribusi konversi real-time.",
+          "videoSrc": "/videos/seo-analytics.mp4",
+          "poster": "/images/hero.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. INFRASTRUKTUR",
+            "title": "Arsitektur Teknis SEO & Crawl",
+            "description": "Audit arsitektur mendalam untuk menghapus hambatan perayapan (crawl traps), konflik canonical, skrip pemblokir render, dan duplikasi halaman.",
+            "items": [
+              "Indeksasi SSR & Edge Rendering",
+              "Hierarki Robots & XML Sitemap Dinamis",
+              "Penandaan Canonical & Hreflang yang Bersih",
+              "Optimalisasi Struktur Tautan Internal"
+            ]
+          },
+          {
+            "tag": "02. PERFORMA",
+            "title": "Core Web Vitals & Pengalaman Halaman",
+            "description": "Rekayasa kecepatan mikrodetik untuk meraih skor hijau 90+ pada Largest Contentful Paint (LCP), Interaction to Next Paint (INP), dan Cumulative Layout Shift (CLS).",
+            "items": [
+              "Eliminasi Sumber Daya Penghalang Render",
+              "Penyematan Critical CSS Inline",
+              "Kompresi Aset & Format Gambar Modern",
+              "Pengurangan Latensi Interaksi INP"
+            ]
+          },
+          {
+            "tag": "03. PENGUKURAN",
+            "title": "Pelacakan GA4 Lanjutan & Server-Side",
+            "description": "Arsitektur telemetri kustom untuk melacak mikro-konversi, alur pelanggan, dan atribusi tanpa kehilangan data akibat pemblokir iklan.",
+            "items": [
+              "Server-Side Google Tag Manager",
+              "Skema Event Kustom yang Terperinci",
+              "Instrumentasi Corong E-Commerce",
+              "Pelacakan First-Party Tahan Ad-Blocker"
+            ]
+          },
+          {
+            "tag": "04. STRATEGI PENCARIAN",
+            "title": "Cetak Biru Konten Semantik & Entitas",
+            "description": "Pengelompokan otoritas topik berbasis data yang memetakan niat pencarian bernilai tinggi ke halaman otoritatif berperingkat teratas.",
+            "items": [
+              "Topical Authority Clustering",
+              "Markup Rich Snippet Schema.org",
+              "Analisis Kesenjangan Niat Pencarian (Search Intent)",
+              "Audit Kerentanan SERP Kompetitor"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Audit Crawl Mendalam & Baseline",
+            "description": "Kami menganalisis file log, pola perayapan, status indeks, dan data analitik yang ada untuk mengungkap semua blind spot teknis.",
+            "output": "Audit Teknis Komprehensif & Matriks Prioritas Perbaikan"
+          },
+          {
+            "step": "02",
+            "name": "Remediasi Arsitektur",
+            "description": "Perbaikan langsung pada kode dan server: sitemap, tag kanonikal, data terstruktur schema, dan optimasi Core Web Vitals.",
+            "output": "Pull Request Kode Bersih & Validasi Google Rich Results"
+          },
+          {
+            "step": "03",
+            "name": "Instrumentasi Telemetri & Event",
+            "description": "Menerapkan pelacakan server-side, pelacakan konversi khusus, dan dashboard analitik eksekutif yang memperbarui otomatis.",
+            "output": "Dashboard Eksekutif Live & Telemetri Event Terverifikasi"
+          },
+          {
+            "step": "04",
+            "name": "Peningkatan Skala & Otoritas Berkelanjutan",
+            "description": "Pemantauan kata kunci bulanan, penyempurnaan konten, audit backlink, dan iterasi rasio konversi secara terus-menerus.",
+            "output": "Laporan Intelijen Pencarian & Pertumbuhan Bulanan"
+          }
+        ],
+        "tools": [
+          "Google Search Console",
+          "Google Analytics 4",
+          "Server-Side GTM",
+          "PostHog",
+          "Screaming Frog",
+          "Ahrefs",
+          "Semrush",
+          "BigQuery"
+        ],
+        "faq": [
+          {
+            "q": "Seberapa cepat kami akan melihat hasil dari perbaikan SEO teknis?",
+            "a": "Optimalisasi crawl budget dan perbaikan indeksasi teknis biasanya menunjukkan dampak nyata di Google Search Console dalam 2–4 minggu; peningkatan peringkat kata kunci kompetitif menguat dalam 60–90 hari."
+          },
+          {
+            "q": "Mengapa pelacakan server-side lebih baik daripada analitik client-side standar?",
+            "a": "Pelacak browser standar kehilangan 20% hingga 35% data karena perlindungan privasi browser dan ad-blocker. Pelacakan server-side mengalirkan data melalui domain kustom Anda, menjamin integritas data dan kecepatan halaman."
+          },
+          {
+            "q": "Apakah Anda langsung menyentuh basis kode kami untuk menerapkan perbaikan?",
+            "a": "Ya. Tidak seperti agensi yang hanya mengirimkan laporan PDF, para engineer kami dapat langsung menerapkan optimasi kode, skema data terstruktur, dan perbaikan metadata ke repositori Anda."
+          }
+        ],
+        "cta": {
+          "title": "Siap Menguasai Hasil Pencarian Organik?",
+          "description": "Berhenti menebak-nebak visibilitas Anda. Mari bangun mesin pencarian dan analitik terukur untuk bisnis Anda.",
+          "button": "Mulai Audit SEO"
+        }
+      },
+      "marketing-technology": {
+        "slug": "marketing-technology",
+        "spec": "SPEC-03 // SISTEM & OTOMATISASI",
+        "title": "Teknologi Pemasaran",
+        "tagline": "OTOMATISASI DAMPAK, SINKRONISASI PERTUMBUHAN",
+        "intro": "Spreadsheet terpisah, input data manual, dan komunikasi penjualan yang terputus menguras pendapatan. Ngarsa merancang sistem MarTech terpadu yang menyinkronkan CRM, saluran perpesanan, dan penilaian prospek menjadi mesin pertumbuhan otonom 24/7.",
+        "quickSpecs": {
+          "delivery": "2–6 Minggu",
+          "stack": "HubSpot, Make, Zapier, Resend, WhatsApp Cloud API",
+          "architecture": "Event-Driven Webhooks & Otomatisasi Serverless",
+          "ownership": "100% Kontrol Admin Internal & Alur Terdokumentasi"
+        },
+        "video": {
+          "title": "Reel Alur Otomatisasi Pipeline & Integrasi Multi-Saluran",
+          "description": "Simulasi visual Google AI yang mendemonstrasikan perambatan event webhook, perutean kontak CRM, dan urutan komunikasi otomatis lintas saluran.",
+          "videoSrc": "/videos/marketing-technology.mp4",
+          "poster": "/images/about-snippet.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. SISTEM CRM",
+            "title": "Arsitektur CRM & Rekayasa Pipeline",
+            "description": "Pemodelan pipeline khusus, properti kontak kustom, dan perpindahan status otomatis di HubSpot, Zoho, atau Pipedrive untuk menyelaraskan penjualan dan pemasaran.",
+            "items": [
+              "Arsitektur Tahapan Penjualan Kustom",
+              "Perutean Prospek Otomatis & Trigger SLA",
+              "Aturan Kebersihan Data & Anti-Duplikasi",
+              "Dashboard Aktivitas Penjualan Kustom"
+            ]
+          },
+          {
+            "tag": "02. ALUR KERJA",
+            "title": "Perjalanan Otomatis Omnichannel",
+            "description": "Urutan email, WhatsApp, dan SMS berbasis pemicu yang membina prospek secara cerdas berdasarkan interaksi perilaku nyata.",
+            "items": [
+              "Kampanye Email Daur Hidup Pelanggan Dinamis",
+              "Otomatisasi WhatsApp Official Cloud API",
+              "Pemicu Keranjang Ditinggalkan & Re-engagement",
+              "Segmentasi Prospek Berbasis Perilaku"
+            ]
+          },
+          {
+            "tag": "03. INTEGRASI",
+            "title": "Webhook Serverless & Middleware Kustom",
+            "description": "Fungsi jembatan serverless kustom (Node.js/Edge) yang menghubungkan aplikasi web internal, payment gateway, dan SaaS pihak ketiga tanpa ketergantungan kaku.",
+            "items": [
+              "Alur Kerja Enterprise Make & Zapier",
+              "Receiver Webhook Kustom dengan Logika Retry",
+              "Sinkronisasi Database Dua Arah",
+              "Manajemen Token API Aman"
+            ]
+          },
+          {
+            "tag": "04. INTELIJEN BISNIS",
+            "title": "Atribusi Pemasaran & Analitik Revenue",
+            "description": "Pelaporan closed-loop yang jelas menghubungkan titik kontak pemasaran awal ke kontrak yang ditandatangani dan pendapatan yang masuk.",
+            "items": [
+              "Model Atribusi First-Touch & Multi-Touch",
+              "Pelacakan Biaya Akuisisi Pelanggan (CAC)",
+              "Notifikasi Deal Otomatis ke Slack/Discord",
+              "Tampilan Corong Pendapatan Eksekutif"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Audit Sistem & Pemetaan Perjalanan",
+            "description": "Kami memetakan setiap titik kontak pelanggan, lisensi perangkat lunak, silo data, dan proses manual yang menghambat alur kerja Anda.",
+            "output": "Peta Arsitektur MarTech & Cetak Biru Otomatisasi"
+          },
+          {
+            "step": "02",
+            "name": "Definisi Skema & Konfigurasi CRM",
+            "description": "Mengonfigurasi objek khusus, properti data, pipeline penjualan, dan batas hak akses tim.",
+            "output": "CRM Produksi Siap Pakai & Skema Kontak Terstruktur"
+          },
+          {
+            "step": "03",
+            "name": "Pembangunan Alur Kerja & Integrasi Webhook",
+            "description": "Membangun endpoint webhook, pemicu otomatisasi, template pesan transaksional, dan penanganan error.",
+            "output": "Urutan Otomatisasi Live & Pipeline API Terkoneksi"
+          },
+          {
+            "step": "04",
+            "name": "Uji Beban & Pelatihan Tim",
+            "description": "Mensimulasikan ratusan prospek uji coba melalui setiap alur cabang, memastikan tingkat pengiriman, dan melatih tim Anda.",
+            "output": "Buku Panduan Operasional & Sesi Pelatihan Tim"
+          }
+        ],
+        "tools": [
+          "HubSpot",
+          "Make (Integromat)",
+          "Zapier",
+          "Resend",
+          "WhatsApp Cloud API",
+          "Customer.io",
+          "PostgreSQL",
+          "Slack API"
+        ],
+        "faq": [
+          {
+            "q": "Bisakah Anda mengintegrasikan website yang ada dengan CRM tanpa harus membuat ulang website?",
+            "a": "Ya. Kami membuat penangkap API dan endpoint webhook ringan yang merekam pengisian formulir, klik tombol, dan transaksi tanpa perlu merombak seluruh situs Anda."
+          },
+          {
+            "q": "Apa yang terjadi jika webhook pihak ketiga mengalami kegagalan (down)?",
+            "a": "Semua otomatisasi kami rancang dengan mekanisme percobaan ulang (retry logic), antrean error penyimpanan cadangan, dan notifikasi instan ke Slack agar tidak ada prospek yang hilang."
+          },
+          {
+            "q": "Apakah tim kami dapat mengelola alur kerja ini sendiri setelah serah terima?",
+            "a": "Tentu. Setiap pipeline dirancang dengan kejelasan visual dan kami sediakan video panduan langkah demi langkah serta dokumentasi operasional lengkap."
+          }
+        ],
+        "cta": {
+          "title": "Siap Mengotomatiskan Mesin Pendapatan Anda?",
+          "description": "Hentikan waktu terbuang untuk input data manual berulang. Mari kita bangun infrastruktur pemasaran yang berjalan secara otomatis.",
+          "button": "Mulai Otomatisasi MarTech"
+        }
+      },
+      "design-branding": {
+        "slug": "design-branding",
+        "spec": "SPEC-04 // IDENTITAS & ARTEFAK",
+        "title": "Desain & Branding",
+        "tagline": "KAMI TIDAK SUKA TAMPIL BIASA. IDENTITAS YANG MENUNTUT PERHATIAN",
+        "intro": "Di tengah lautan visual internet yang seragam dengan minimalisme korporat membosankan, branding yang 'sopan' adalah branding yang tidak terlihat. Ngarsa menciptakan identitas visual yang tegas, design system komprehensif, dan artefak kreatif berani yang mengukir nama Anda di benak industri.",
+        "quickSpecs": {
+          "delivery": "3–6 Minggu",
+          "stack": "Figma, Adobe Creative Suite, Design Tokens, Glyphs",
+          "architecture": "Design System Atomic Modular",
+          "ownership": "100% Hak Komersial Penuh untuk Vektor, Font & Aset"
+        },
+        "video": {
+          "title": "Reel Identitas Kinetik & Simulasi Token Desain",
+          "description": "Simulasi visual Google AI yang mengeksplorasi skala tipografi merek, transformasi logo kinetik, dan perilaku token desain berkontras tinggi di berbagai perangkat digital.",
+          "videoSrc": "/videos/design-branding.mp4",
+          "poster": "/images/about-hero.jpg"
+        },
+        "pillars": [
+          {
+            "tag": "01. STRATEGI",
+            "title": "Strategi Merek & Diferensiasi Tegas",
+            "description": "Menggali arketipe merek, suara naratif, ketegangan kompetitif, dan sudut pandang autentik yang membedakan Anda dari kompetitor biasa.",
+            "items": [
+              "Arsitektur Narasi & Karakter Suara Merek",
+              "Analisis Whitespace Ruang Kompetitif",
+              "Persona Merek & Manifesto Nilai Inti",
+              "Buku Panduan Tagline & Pesan Kunci"
+            ]
+          },
+          {
+            "tag": "02. IDENTITAS",
+            "title": "Sistem Identitas Visual",
+            "description": "Identitas grafis menyeluruh yang memuat logo primer, sekunder, skala tipografi berani, palet warna kustom, dan sistem tekstur visual.",
+            "items": [
+              "Logo Primer, Sekunder & Favicon/App Icon",
+              "Sistem Token Warna Berkontras Tinggi",
+              "Hierarki Tipografi Display & Body Text",
+              "Pola Grafis Khas & Aset Tekstur"
+            ]
+          },
+          {
+            "tag": "03. ARSITEKTUR UI/UX",
+            "title": "Design System Figma Berbasis Komponen",
+            "description": "Design system yang skalabel dengan auto-layout, varian interaktif, mode terang/gelap, dan variabel token yang siap langsung di-coding oleh tim developer.",
+            "items": [
+              "Pustaka Komponen UI Atomic Lengkap",
+              "Tata Letak Layar Responsif (Desktop & Mobile)",
+              "Spesifikasi Animasi Mikro & Interaksi",
+              "Pemetaan Token Desain untuk Frontend"
+            ]
+          },
+          {
+            "tag": "04. ARTEFAK",
+            "title": "Desain Kolateral & Artefak Berdampak Tinggi",
+            "description": "Aset nyata dan digital yang mempertahankan karakter merek Anda di setiap titik kontak dunia nyata secara konsisten.",
+            "items": [
+              "Slide Presentasi Pitch Deck & Keynote",
+              "Template & Format Desain Media Sosial",
+              "Spesifikasi Kemasan & Kolateral Cetak",
+              "Buku Panduan Identitas Merek (Brand Guidelines)"
+            ]
+          }
+        ],
+        "roadmap": [
+          {
+            "step": "01",
+            "name": "Imersi & Ketegangan Strategis",
+            "description": "Wawancara mendalam, audit visual pasar, dan pemetaan ruang kreasi untuk menetapkan satu posisi tajam yang akan dimiliki merek Anda.",
+            "output": "Brief Merek Strategis & Moodboard Konseptual"
+          },
+          {
+            "step": "02",
+            "name": "Arah Konseptual",
+            "description": "Mengembangkan dua arah kreatif yang tegas dan kontras, lengkap dengan logo, tipografi, warna, dan mockup penerapan dunia nyata.",
+            "output": "Dua Dokumen Arah Konsep Merek yang Berbeda"
+          },
+          {
+            "step": "03",
+            "name": "Penyusunan Sistem & Penyempurnaan",
+            "description": "Mengembangkan arah terpilih menjadi identitas visual yang lengkap, pustaka Figma responsif, dan paket aset digital terperinci.",
+            "output": "Design System Figma Lengkap & Spesifikasi Komponen"
+          },
+          {
+            "step": "04",
+            "name": "Pengiriman Master Aset",
+            "description": "Mengekspor aset vektor master (SVG, EPS, PDF), paket font web, template media sosial, dan buku panduan merek komprehensif.",
+            "output": "Arsip Master Aset & Buku Brand Guidelines Lengkap"
+          }
+        ],
+        "tools": [
+          "Figma",
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "After Effects",
+          "Glyphs",
+          "Design Tokens"
+        ],
+        "faq": [
+          {
+            "q": "Apakah Anda hanya membuat logo, atau seluruh sistem identitas?",
+            "a": "Kami membangun sistem identitas lengkap. Logo tanpa panduan tipografi, filosofi warna, prinsip tata letak, dan nada suara hanyalah sebuah gambar—kami memberi Anda bahasa visual yang utuh."
+          },
+          {
+            "q": "Apakah file Figma siap langsung diimplementasikan oleh programmer kami?",
+            "a": "Ya. Seluruh komponen menggunakan Figma variables, auto-layout terbaru, token jarak standar, dan penamaan warna semantik yang sesuai dengan framework CSS modern."
+          },
+          {
+            "q": "Apakah kami mendapatkan hak cipta dan hak penggunaan komersial penuh?",
+            "a": "Ya. Setelah proyek selesai dan dilunasi, Anda mendapatkan hak kepemilikan komersial penuh di seluruh dunia atas semua logo, vektor, dan karya kustom yang diserahkan."
+          }
+        ],
+        "cta": {
+          "title": "Siap Membangun Identitas yang Tak Terbantahkan?",
+          "description": "Berhenti terlihat sama dengan yang lain. Mari rancang identitas merek yang menolak untuk diabaikan.",
+          "button": "Mulai Proyek Branding"
+        }
+      }
+    }
   }
 }
