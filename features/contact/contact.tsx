@@ -1,13 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const Contact = () => {
-  const t = useTranslations("contact");
+export const Contact = async () => {
+  const t = await getTranslations("contact");
 
   return (
-    <main className="flex-grow w-full max-w-[1280px] mx-auto px-margin py-section-gap flex flex-col gap-section-gap">
+    <div className="flex-grow w-full max-w-[1280px] mx-auto px-margin py-section-gap flex flex-col gap-section-gap">
       <section className="flex flex-col items-start gap-8 relative z-10">
         <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white bg-primary-container inline-block px-4 py-2 border-4 border-outline-heavy shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] -rotate-2">
           {t("hero.title")}
@@ -72,6 +70,6 @@ export const Contact = () => {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
