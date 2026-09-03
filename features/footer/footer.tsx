@@ -27,8 +27,17 @@ export const Footer = () => {
             <div>
               <h4 className="font-headline-lg text-xl text-primary-fixed dark:text-primary mb-4">{t("ourServices")}</h4>
               <ul className="font-body-md text-surface-variant dark:text-on-surface-variant space-y-2">
-                {[0, 1, 2, 3].map((idx) => (
-                  <li key={idx}>{t(`services.${idx}`)}</li>
+                {[
+                  { idx: 0, href: "/services/web-creative" },
+                  { idx: 1, href: "/services/marketing-technology" },
+                  { idx: 2, href: "/services/seo-analytics" },
+                  { idx: 3, href: "/services/design-branding" },
+                ].map(({ idx, href }) => (
+                  <li key={idx}>
+                    <Link className="hover:text-primary-fixed transition-colors" href={href}>
+                      {t(`services.${idx}`)}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
