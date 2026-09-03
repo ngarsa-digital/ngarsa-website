@@ -56,11 +56,11 @@ export async function generateMetadata({
     keywords: t("keywords"),
     authors: [{ name: "Ngarsa Digital" }],
     alternates: {
-      canonical: isDefault ? "/" : `/${locale}`,
+      canonical: `/${locale}`,
       languages: {
-        en: "/",
+        en: "/en",
         id: "/id",
-        "x-default": "/",
+        "x-default": "/en",
       },
     },
     robots: {
@@ -70,7 +70,7 @@ export async function generateMetadata({
       "max-snippet": -1,
     },
     openGraph: {
-      url: isDefault ? "/" : `/${locale}`,
+      url: `/${locale}`,
       type: "website",
       title: t("ogTitle"),
       description: t("ogDescription"),
@@ -104,12 +104,6 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={`${manrope.variable} ${workSans.variable} bg-background text-on-background font-manrope antialiased selection:bg-primary-fixed selection:text-on-primary-fixed`}
       >
