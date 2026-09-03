@@ -6,10 +6,10 @@ export const Home = async () => {
   const t = await getTranslations("home");
 
   const services = [
-    { name: t("services.cards.webCreative"), icon: "monitor" },
-    { name: t("services.cards.seoAnalytics"), icon: "rocket_launch" },
-    { name: t("services.cards.marketingTech"), icon: "campaign" },
-    { name: t("services.cards.designBranding"), icon: "draw" },
+    { name: t("services.cards.webCreative"), icon: "monitor", href: "/services/web-creative" },
+    { name: t("services.cards.seoAnalytics"), icon: "rocket_launch", href: "/services/seo-analytics" },
+    { name: t("services.cards.marketingTech"), icon: "campaign", href: "/services/marketing-technology" },
+    { name: t("services.cards.designBranding"), icon: "draw", href: "/services/design-branding" },
   ];
 
   return (
@@ -61,15 +61,26 @@ export const Home = async () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, idx) => (
-            <div key={service.name} className={`bg-surface border-4 border-inverse-surface p-8 brutalist-shadow flex flex-col items-start h-full group hover:bg-primary-fixed transition-colors ${idx % 2 !== 0 ? "md:translate-y-8" : ""}`}>
-              <div className="bg-primary-container text-on-primary-container p-4 border-2 border-inverse-surface mb-6">
-                <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: '"FILL" 1' }}>
-                  {service.icon}
-                </span>
+            <Link
+              key={service.name}
+              href={service.href}
+              className={`bg-surface border-4 border-inverse-surface p-8 brutalist-shadow flex flex-col items-start justify-between h-full group hover:bg-primary-fixed transition-colors ${
+                idx % 2 !== 0 ? "md:translate-y-8" : ""
+              }`}
+            >
+              <div>
+                <div className="bg-primary-container text-on-primary-container p-4 border-2 border-inverse-surface mb-6 inline-block">
+                  <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: '"FILL" 1' }}>
+                    {service.icon}
+                  </span>
+                </div>
+                <h3 className="font-headline-lg text-headline-lg text-on-surface mb-4 group-hover:text-inverse-surface">{service.name}</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface mb-6">{t("services.cards.description")}</p>
               </div>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface mb-4">{service.name}</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface">{t("services.cards.description")}</p>
-            </div>
+              <span className="inline-flex items-center gap-1 font-label-bold text-label-bold uppercase text-primary-container group-hover:text-inverse-surface mt-auto">
+                Explore <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </span>
+            </Link>
           ))}
         </div>
       </section>
