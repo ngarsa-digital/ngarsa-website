@@ -2,16 +2,18 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { locales, type Locale } from "@/i18n";
 
 export const Navigation = () => {
   const t = useTranslations("nav");
+  const tLang = useTranslations("language");
   const pathname = usePathname();
   const router = useRouter();
   const currentLocale = useLocale() as Locale;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
 
   const isActive = (path: string) => pathname === path;
 
@@ -37,6 +39,26 @@ export const Navigation = () => {
       document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setIsLangOpen(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsLangOpen(false);
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <>
@@ -65,11 +87,12 @@ export const Navigation = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="relative hidden md:block">
+          <div ref={langRef} className="relative hidden md:block">
             <button
               onClick={() => setIsLangOpen(!isLangOpen)}
               className="w-12 h-12 flex items-center justify-center bg-surface border-4 border-inverse-surface rounded-sm shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all hover:bg-surface-container-low focus:outline-none"
-              aria-label="Language Selector"
+              aria-label={t("language")}
+              aria-expanded={isLangOpen}
             >
               <span className="material-symbols-outlined">language</span>
             </button>
@@ -85,7 +108,7 @@ export const Navigation = () => {
                         : "text-inverse-surface hover:bg-surface-container-high"
                     }`}
                   >
-                    {locale === "en" ? "English" : "Indonesian"}
+                    {locale === "en" ? tLang("english") : tLang("indonesian")}
                     <span className={`material-symbols-outlined text-[18px] ${locale === currentLocale ? "opacity-100" : "opacity-0 group-hover:opacity-50"}`}>
                       {locale === currentLocale ? "check" : "arrow_forward"}
                     </span>
@@ -115,7 +138,7 @@ export const Navigation = () => {
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}
-              aria-label="Close Menu"
+              aria-label={t("closeMenu")}
               className="border-4 border-inverse-surface bg-error-container hover:bg-error hover:text-on-error transition-colors duration-200 shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none p-2 flex items-center justify-center"
             >
               <span className="material-symbols-outlined" style={{ fontSize: "32px" }}>
@@ -125,28 +148,31 @@ export const Navigation = () => {
           </div>
 
           <nav className="flex-grow flex flex-col gap-6 justify-center">
-            {navLinks.map((link, idx) => (
-              <Link
-                key={link.path}
-                href={link.path}
-                onClick={() => setIsMenuOpen(false)}
-                className={`group relative block w-full border-4 border-inverse-surface px-6 py-8 shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] active:translate-x-2 active:translate-y-2 active:shadow-none transition-all duration-200 ${
-                  idx === 0 ? "bg-primary-container" : "bg-surface hover:bg-surface-container-high"
-                }`}
-              >
-                <div className="flex justify-between items-center">
-                  <span className={`font-display-lg-mobile text-display-lg-mobile font-black transition-colors ${idx === 0 ? "text-inverse-surface group-hover:text-surface-tint" : "text-on-surface-variant group-hover:text-primary"}`}>
-                    {link.name}
-                  </span>
-                  {idx === 0 && (
-                    <span className="material-symbols-outlined text-4xl text-inverse-surface opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all">
-                      arrow_forward
+            {navLinks.map((link) => {
+              const active = isActive(link.path);
+              return (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`group relative block w-full border-4 border-inverse-surface px-6 py-8 shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] active:translate-x-2 active:translate-y-2 active:shadow-none transition-all duration-200 ${
+                    active ? "bg-primary-container" : "bg-surface hover:bg-surface-container-high"
+                  }`}
+                >
+                  <div className="flex justify-between items-center">
+                    <span className={`font-display-lg-mobile text-display-lg-mobile font-black transition-colors ${active ? "text-inverse-surface group-hover:text-surface-tint" : "text-on-surface-variant group-hover:text-primary"}`}>
+                      {link.name}
                     </span>
-                  )}
-                </div>
-                {idx === 0 && <div className="absolute -left-2 -top-2 w-4 h-4 bg-inverse-surface border-2 border-surface"></div>}
-              </Link>
-            ))}
+                    {active && (
+                      <span className="material-symbols-outlined text-4xl text-inverse-surface transform transition-all">
+                        arrow_forward
+                      </span>
+                    )}
+                  </div>
+                  {active && <div className="absolute -left-2 -top-2 w-4 h-4 bg-inverse-surface border-2 border-surface"></div>}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="mt-auto pt-8 border-t-4 border-inverse-surface flex flex-col gap-4">
@@ -159,10 +185,15 @@ export const Navigation = () => {
                 onClick={() => {
                   const nextLocale = currentLocale === "en" ? "id" : "en";
                   switchLanguage(nextLocale as Locale);
+                  setIsMenuOpen(false);
                 }}
-                className="border-4 border-inverse-surface p-3 bg-tertiary-container shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                aria-label={t("language")}
+                className="border-4 border-inverse-surface px-4 py-3 bg-tertiary-container shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none flex items-center gap-2 font-bold"
               >
                 <span className="material-symbols-outlined text-inverse-surface">language</span>
+                <span className="font-label-bold text-label-bold uppercase text-inverse-surface">
+                  {currentLocale === "en" ? "ID" : "EN"}
+                </span>
               </button>
             </div>
           </div>
