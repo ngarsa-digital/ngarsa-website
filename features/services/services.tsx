@@ -6,7 +6,7 @@ export const Services = async () => {
   const t = await getTranslations("services");
 
   return (
-    <main className="max-w-[1280px] mx-auto w-full pt-section-gap pb-section-gap">
+    <div className="max-w-[1280px] mx-auto w-full pt-section-gap pb-section-gap">
       <section className="px-margin mb-section-gap">
         <div className="relative inline-block mb-8">
           <span className="bg-primary-container px-6 py-2 inline-block -rotate-2 brutalist-border shadow-[8px_8px_0px_0px_#2e3131]">
@@ -97,6 +97,6 @@ export const Services = async () => {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
