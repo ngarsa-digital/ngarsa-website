@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-gutter py-section-gap grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="bg-surface border-4 border-inverse-surface p-8 brutalist-shadow text-on-surface flex flex-col justify-center gap-6">
           <h3 className="font-headline-lg text-headline-lg">{t("ctaTitle")}</h3>
-          <p className="font-body-md text-shadow-surface-tint dark:text-on-surface-variant">{t("ctaDescription")}</p>
+          <p className="font-body-md text-on-surface-variant">{t("ctaDescription")}</p>
           <Link className="inline-flex items-center gap-2 bg-primary-fixed text-on-surface px-8 py-4 border-4 border-inverse-surface brutalist-shadow font-label-bold text-label-bold uppercase w-full justify-center" href="/contact">
             {t("ctaButton")} <span className="material-symbols-outlined">arrow_outward</span>
           </Link>
