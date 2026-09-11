@@ -17,13 +17,18 @@ export const Services = async () => {
       </section>
 
       <section className="px-margin mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Web & Creative */}
         <div className="bg-surface-container-lowest brutalist-border brutalist-shadow p-8 md:col-span-2 group hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
           <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
             <div className="flex-1">
               <div className="inline-block bg-tertiary-container px-3 py-1 brutalist-border rounded-full mb-4">
                 <span className="font-label-bold text-label-bold text-on-tertiary-container uppercase tracking-wider">{t("cards.webCreative.label")}</span>
               </div>
-              <h2 className="font-headline-xl text-headline-xl mb-4 group-hover:text-primary-container transition-colors">{t("cards.webCreative.title")}</h2>
+              <h2 className="font-headline-xl text-headline-xl mb-4 group-hover:text-primary-container transition-colors">
+                <Link href="/services/web-creative" className="hover:underline">
+                  {t("cards.webCreative.title")}
+                </Link>
+              </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">{t("cards.webCreative.description")}</p>
               <ul className="space-y-2 mb-6">
                 {t.raw("cards.webCreative.items").map((item: string, idx: number) => (
@@ -32,6 +37,13 @@ export const Services = async () => {
                   </li>
                 ))}
               </ul>
+              <Link
+                href="/services/web-creative"
+                className="inline-flex items-center gap-2 bg-primary text-on-primary border-2 border-inverse-surface brutalist-shadow-sm px-6 py-3 font-label-bold text-label-bold uppercase hover:bg-primary-fixed hover:text-inverse-surface transition-colors"
+              >
+                <span>{t("explore")}</span>
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </Link>
             </div>
             <div className="relative w-full md:w-1/2 h-64 bg-secondary-container brutalist-border overflow-hidden">
               <Image src="/images/service-web.jpg" alt="Web & creative development services" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
@@ -39,43 +51,79 @@ export const Services = async () => {
           </div>
         </div>
 
-        <div className="bg-primary-container text-inverse-on-surface brutalist-border brutalist-shadow p-8 flex flex-col justify-between hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
+        {/* SEO & Analytics */}
+        <div className="bg-primary-container text-inverse-on-surface brutalist-border brutalist-shadow p-8 flex flex-col justify-between hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all group">
           <div>
             <div className="inline-block bg-inverse-surface px-3 py-1 brutalist-border rounded-full mb-4">
               <span className="font-label-bold text-label-bold text-surface-container uppercase tracking-wider">{t("cards.seoAnalytics.label")}</span>
             </div>
-            <h2 className="font-headline-lg text-headline-lg mb-4 text-inverse-on-surface">{t("cards.seoAnalytics.title")}</h2>
-            <p className="font-body-md text-surface-container-high">{t("cards.seoAnalytics.description")}</p>
+            <h2 className="font-headline-lg text-headline-lg mb-4 text-inverse-on-surface">
+              <Link href="/services/seo-analytics" className="hover:underline">
+                {t("cards.seoAnalytics.title")}
+              </Link>
+            </h2>
+            <p className="font-body-md text-surface-container-high mb-6">{t("cards.seoAnalytics.description")}</p>
           </div>
-          <div className="mt-8 flex justify-end">
+          <div className="mt-8 flex items-center justify-between">
+            <Link
+              href="/services/seo-analytics"
+              className="inline-flex items-center gap-2 bg-surface text-on-surface border-2 border-inverse-surface brutalist-shadow-sm px-4 py-2 font-label-bold text-label-bold uppercase hover:bg-primary-fixed transition-colors"
+            >
+              <span>{t("explore")}</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
             <span className="material-symbols-outlined text-[64px] text-inverse-primary" style={{ fontVariationSettings: '"FILL" 1' }}>
               monitoring
             </span>
           </div>
         </div>
 
-        <div className="bg-surface-container-lowest brutalist-border brutalist-shadow p-8 hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
+        {/* Marketing Technology */}
+        <div className="bg-surface-container-lowest brutalist-border brutalist-shadow p-8 flex flex-col justify-between hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all group">
           <div>
             <div className="inline-block bg-error-container px-3 py-1 brutalist-border rounded-full mb-4">
               <span className="font-label-bold text-label-bold text-on-error-container uppercase tracking-wider">{t("cards.marketingTech.label")}</span>
             </div>
-            <h2 className="font-headline-lg text-headline-lg mb-4">{t("cards.marketingTech.title")}</h2>
-            <p className="font-body-md text-on-surface-variant">{t("cards.marketingTech.description")}</p>
+            <h2 className="font-headline-lg text-headline-lg mb-4">
+              <Link href="/services/marketing-technology" className="hover:underline">
+                {t("cards.marketingTech.title")}
+              </Link>
+            </h2>
+            <p className="font-body-md text-on-surface-variant mb-6">{t("cards.marketingTech.description")}</p>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 flex items-center justify-between">
+            <Link
+              href="/services/marketing-technology"
+              className="inline-flex items-center gap-2 bg-surface text-on-surface border-2 border-inverse-surface brutalist-shadow-sm px-4 py-2 font-label-bold text-label-bold uppercase hover:bg-primary-fixed transition-colors"
+            >
+              <span>{t("explore")}</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
             <span className="material-symbols-outlined text-[64px] text-error" style={{ fontVariationSettings: '"FILL" 1' }}>
               hub
             </span>
           </div>
         </div>
 
-        <div className="bg-surface-container-highest brutalist-border brutalist-shadow p-8 md:col-span-2 flex flex-col md:flex-row-reverse gap-8 items-center hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
+        {/* Design & Branding */}
+        <div className="bg-surface-container-highest brutalist-border brutalist-shadow p-8 md:col-span-2 flex flex-col md:flex-row-reverse gap-8 items-center hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all group">
           <div className="flex-1">
             <div className="inline-block bg-tertiary px-3 py-1 brutalist-border rounded-full mb-4">
               <span className="font-label-bold text-label-bold text-on-tertiary uppercase tracking-wider">{t("cards.designBranding.label")}</span>
             </div>
-            <h2 className="font-headline-xl text-headline-xl mb-4">{t("cards.designBranding.title")}</h2>
-            <p className="font-body-lg text-on-surface-variant">{t("cards.designBranding.description")}</p>
+            <h2 className="font-headline-xl text-headline-xl mb-4">
+              <Link href="/services/design-branding" className="hover:underline">
+                {t("cards.designBranding.title")}
+              </Link>
+            </h2>
+            <p className="font-body-lg text-on-surface-variant mb-6">{t("cards.designBranding.description")}</p>
+            <Link
+              href="/services/design-branding"
+              className="inline-flex items-center gap-2 bg-tertiary text-on-tertiary border-2 border-inverse-surface brutalist-shadow-sm px-6 py-3 font-label-bold text-label-bold uppercase hover:bg-primary-fixed hover:text-inverse-surface transition-colors"
+            >
+              <span>{t("explore")}</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
           </div>
           <div className="w-full md:w-1/3 h-48 bg-tertiary-container brutalist-border flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 pattern-dots text-outline-variant opacity-50"></div>
