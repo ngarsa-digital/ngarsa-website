@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import { Home } from "@/features/home/home";
 
 const baseUrl = "https://ngarsa.com";
@@ -155,9 +154,7 @@ const jsonLdBlocks = [
   },
 ];
 
-export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function Page() {
   return (
     <>
       {jsonLdBlocks.map((block, index) => (
