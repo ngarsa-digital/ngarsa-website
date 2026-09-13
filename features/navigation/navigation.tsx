@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/navigation";
 import { useState, useEffect, useRef } from "react";
-import { locales, type Locale } from "@/i18n";
+import { locales, type Locale } from "@/routing";
 
 export const Navigation = () => {
   const t = useTranslations("nav");
@@ -97,7 +97,7 @@ export const Navigation = () => {
               <span className="material-symbols-outlined">language</span>
             </button>
             {isLangOpen && (
-              <div className="absolute right-0 top-[calc(100%+8px)] w-48 bg-white border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] z-[100] flex flex-col">
+              <div className="absolute right-0 top-[calc(100%+8px)] w-48 bg-white border-4 border-inverse-surface shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] z-100 flex flex-col">
                 {locales.map((locale) => (
                   <button
                     key={locale}
@@ -147,7 +147,7 @@ export const Navigation = () => {
             </button>
           </div>
 
-          <nav className="flex-grow flex flex-col gap-6 justify-center">
+          <nav className="grow flex flex-col gap-6 justify-center">
             {navLinks.map((link) => {
               const active = isActive(link.path);
               return (
