@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { locales } from "@/i18n";
+import { locales } from "@/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://ngarsa.com";
@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/design-branding",
     "/about",
     "/contact",
+    "/privacy",
+    "/terms",
   ];
 
   return paths.flatMap((path) =>
