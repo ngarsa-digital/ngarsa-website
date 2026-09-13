@@ -91,23 +91,13 @@
       }
     },
     "team": {
-      "title": "TIM",
-      "members": {
-        "alex": {
-          "name": "Alex Mercer",
-          "role": "Direktur Kreatif",
-          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
-        },
-        "jordan": {
-          "name": "Jordan Lee",
-          "role": "Pengembang Utama",
-          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
-        },
-        "sam": {
-          "name": "Sam Taylor",
-          "role": "Strategis Desain",
-          "bio": "Ahli dalam kerajinan digital. Berjaya dalam dampak dan kejelasan."
-        }
+      "title": "PENDIRI",
+      "founder": {
+        "badge": "KEPEMIMPINAN",
+        "name": "Risyandi",
+        "role": "Pendiri & Principal engineer",
+        "bio": "Merancang platform digital yang tangguh dan pengalaman merek yang berani. Berdedikasi untuk meningkatkan kerajinan digital melalui rekayasa presisi, teknologi kreatif mutakhir, dan kreativitas tanpa kompromi.",
+        "quote": "Kami tidak puas dengan produk digital biasa. Kami membangun realitas tangguh yang memikat perhatian dan mendorong dampak nyata."
       }
     }
   },
@@ -156,6 +146,68 @@
     "copyright": "© 2021 - 2026. Hak Cipta Dilindungi. Dibuat oleh <link>ngarsa.com</link>.",
     "privacy": "Privasi",
     "terms": "Syarat"
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "description": "Bagaimana Ngarsa Digital mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan situs ini atau bekerja sama dengan kami.",
+    "lastUpdated": "September 2026",
+    "sections": [
+      {
+        "heading": "Data yang Kami Kumpulkan",
+        "body": "Kami mengumpulkan informasi yang Anda berikan secara langsung melalui formulir kontak, seperti nama, alamat email, dan isi pesan. Kami juga mengumpulkan data teknis secara otomatis dalam batas wajar, termasuk jenis peramban, halaman yang dikunjungi, dan sumber rujukan."
+      },
+      {
+        "heading": "Cara Kami Menggunakan Informasi Anda",
+        "body": "Kami menggunakan informasi Anda untuk menanggapi pertanyaan, menyiapkan proposal proyek, memberikan layanan kami, dan berkomunikasi mengenai pekerjaan yang berjalan. Kami tidak menjual data pribadi Anda kepada pihak ketiga."
+      },
+      {
+        "heading": "Cookie & Analitik",
+        "body": "Situs ini menggunakan Google Tag Manager dan alat analitik terkait untuk memahami bagaimana pengunjung menggunakan situs. Anda dapat menonaktifkan cookie di pengaturan peramban kapan saja tanpa kehilangan akses ke konten situs."
+      },
+      {
+        "heading": "Pembagian Data",
+        "body": "Kami hanya membagikan data pribadi kepada penyedia layanan yang benar-benar diperlukan untuk menjalankan bisnis kami (seperti pengiriman email), atau apabila diwajibkan oleh hukum Indonesia."
+      },
+      {
+        "heading": "Keamanan & Penyimpanan Data",
+        "body": "Kami menerapkan langkah teknis dan organisasi yang wajar untuk melindungi data Anda. Data proyek dan pertanyaan disimpan hanya selama diperlukan untuk tujuan yang dijelaskan di atas."
+      },
+      {
+        "heading": "Hak Anda & Kontak",
+        "body": "Anda dapat meminta akses, koreksi, atau penghapusan data pribadi Anda kapan saja melalui email hello@ngarsa.com."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Syarat & Ketentuan",
+    "description": "Ketentuan yang mengatur penggunaan situs ini serta layanan yang disediakan oleh Ngarsa Digital.",
+    "lastUpdated": "September 2026",
+    "sections": [
+      {
+        "heading": "Penerimaan Ketentuan",
+        "body": "Dengan mengakses situs ini atau menggunakan jasa Ngarsa Digital, Anda menyetujui ketentuan ini. Jika Anda tidak setuju, mohon untuk tidak menggunakan situs ini."
+      },
+      {
+        "heading": "Layanan Kami",
+        "body": "Ngarsa Digital menyediakan layanan pengembangan web, desain & branding, SEO & analitik, serta teknologi pemasaran. Ruang lingkup, timeline, dan biaya setiap proyek ditetapkan dalam proposal atau perjanjian tertulis."
+      },
+      {
+        "heading": "Kekayaan Intelektual",
+        "body": "Setelah pembayaran lunas, klien menerima hak kepemilikan sesuai perjanjian proyek masing-masing. Ngarsa Digital berhak menampilkan hasil pekerjaan dalam portofolionya kecuali disepakati lain secara tertulis."
+      },
+      {
+        "heading": "Pembayaran",
+        "body": "Ketentuan, jadwal, dan mata uang pembayaran ditetapkan per perjanjian proyek. Pekerjaan dapat dijeda apabila tagihan melewati masa tenggang yang disepakati."
+      },
+      {
+        "heading": "Batasan Tanggung Jawab",
+        "body": "Kami memberikan layanan dengan kehati-hatian profesional, namun tidak menjamin hasil bisnis tertentu seperti peringkat pencarian atau pendapatan. Tanggung jawab kami terbatas pada biaya yang dibayarkan untuk proyek terkait."
+      },
+      {
+        "heading": "Hukum yang Berlaku & Kontak",
+        "body": "Ketentuan ini diatur oleh hukum Republik Indonesia. Ada pertanyaan? Hubungi kami di hello@ngarsa.com."
+      }
+    ]
   },
   "language": {
     "english": "Inggris",
