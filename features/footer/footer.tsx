@@ -70,8 +70,8 @@ export const Footer = () => {
                 })}
               </p>
               <div className="flex gap-4">
-                <a className="text-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-colors font-body-md" href="#">{t("privacy")}</a>
-                <a className="text-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-colors font-body-md" href="#">{t("terms")}</a>
+                <Link className="text-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-colors font-body-md" href="/privacy">{t("privacy")}</Link>
+                <Link className="text-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-colors font-body-md" href="/terms">{t("terms")}</Link>
               </div>
             </div>
           </div>
