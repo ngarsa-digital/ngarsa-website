@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       images: [
         {
-          url: "/images/logo-ngarsa.png",
+          url: "/images/og-image.png",
           width: 1200,
           height: 630,
           alt: title,
@@ -70,6 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
+      images: ["/images/og-image.png"],
     },
   };
 }

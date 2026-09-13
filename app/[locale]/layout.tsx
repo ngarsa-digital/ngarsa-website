@@ -34,7 +34,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   minimumScale: 1,
   maximumScale: 5,
-  themeColor: "#1d3ede",
+  themeColor: "#004e5e",
 };
 
 export async function generateMetadata({
@@ -55,7 +55,26 @@ export async function generateMetadata({
     },
     description: t("description"),
     keywords: t("keywords"),
-    authors: [{ name: "Ngarsa Digital" }],
+    authors: [{ name: "Ngarsa Digital", url: baseUrl }],
+    creator: "Ngarsa Digital",
+    publisher: "Ngarsa Digital",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    icons: {
+      icon: [
+        { url: "/images/favicon/favicon.ico", sizes: "any" },
+        { url: "/images/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/images/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/images/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: ["/images/favicon/favicon.ico"],
+    },
+    manifest: "/images/favicon/site.webmanifest",
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -67,16 +86,29 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
     openGraph: {
       url: `/${locale}`,
       type: "website",
       title: t("ogTitle"),
       description: t("ogDescription"),
-      images: [{ url: "/images/logo-ngarsa.png", width: 1200, height: 630 }],
+      images: [
+        {
+          url: "/images/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Ngarsa Digital — Creative Digital Agency Indonesia",
+        },
+      ],
       locale: isDefault ? "en_US" : "id_ID",
+      alternateLocale: isDefault ? ["id_ID"] : ["en_US"],
       siteName: "Ngarsa Digital",
     },
     twitter: {
@@ -85,7 +117,7 @@ export async function generateMetadata({
       creator: "@NgarsaDigital",
       title: t("ogTitle"),
       description: t("twitterDescription"),
-      images: ["/images/logo-ngarsa.png"],
+      images: ["/images/og-image.png"],
     },
     verification: { yandex: "997f78d123f13810" },
     other: {
@@ -93,7 +125,6 @@ export async function generateMetadata({
       "geo.placename": "Jatinangor, Sumedang",
       "geo.position": "-6.9271;107.7718",
       ICBM: "-6.9271, 107.7718",
-      "og:locale:alternate": isDefault ? "id_ID" : "en_US",
     },
   };
 }
