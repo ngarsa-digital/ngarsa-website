@@ -4,35 +4,17 @@ import { getTranslations } from "next-intl/server";
 export const About = async () => {
   const t = await getTranslations("about");
 
-  const team = [
-    {
-      name: t("team.members.alex.name"),
-      role: t("team.members.alex.role"),
-      bio: t("team.members.alex.bio"),
-      img: "/images/team-alex.jpg",
-      offset: "",
-      bg: "bg-surface-container-lowest",
-    },
-    {
-      name: t("team.members.jordan.name"),
-      role: t("team.members.jordan.role"),
-      bio: t("team.members.jordan.bio"),
-      img: "/images/team-jordan.jpg",
-      offset: "md:translate-y-8",
-      bg: "bg-tertiary-container",
-    },
-    {
-      name: t("team.members.sam.name"),
-      role: t("team.members.sam.role"),
-      bio: t("team.members.sam.bio"),
-      img: "/images/team-sam.jpg",
-      offset: "md:translate-y-16",
-      bg: "bg-surface-container-lowest",
-    },
-  ];
+  const founder = {
+    name: t("team.founder.name"),
+    role: t("team.founder.role"),
+    badge: t("team.founder.badge"),
+    bio: t("team.founder.bio"),
+    quote: t("team.founder.quote"),
+    img: "/images/founder.png",
+  };
 
   return (
-    <div className="max-w-[1280px] mx-auto px-margin overflow-hidden">
+    <div className="max-w-7xl mx-auto px-margin overflow-hidden">
       <section className="mt-section-gap mb-section-gap relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-7 z-10">
@@ -45,7 +27,7 @@ export const About = async () => {
           </div>
           <div className="md:col-span-5 relative mt-12 md:mt-0">
             <div className="aspect-square bg-secondary-container brutalist-border brutalist-shadow absolute top-4 left-4 w-full h-full -z-10"></div>
-            <div className="relative w-full aspect-[4/5] brutalist-border bg-surface-container-high">
+            <div className="relative w-full aspect-4/5 brutalist-border bg-surface-container-high">
               <Image src="/images/about-hero.jpg" alt="The Ngarsa Digital team in their studio" fill sizes="(max-width: 768px) 100vw, 40vw" priority className="object-cover" />
             </div>
           </div>
@@ -73,21 +55,46 @@ export const About = async () => {
           <h2 className="font-display-lg text-display-lg-mobile md:text-headline-xl bg-primary text-on-primary px-4 py-2 brutalist-border brutalist-shadow-sm inline-block uppercase">
             {t("team.title")}
           </h2>
-          <span className="material-symbols-outlined text-4xl hidden md:block">groups</span>
+          <span className="material-symbols-outlined text-4xl hidden md:block">person</span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          {team.map((member) => (
-            <div key={member.name} className={`bg-white brutalist-border brutalist-shadow hover:translate-y-[4px] hover:translate-x-[4px] hover:shadow-none transition-all group flex flex-col ${member.offset}`}>
-              <div className="relative aspect-square overflow-hidden border-b-4 border-outline-heavy">
-                <Image src={member.img} alt={member.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-              </div>
-              <div className={`p-6 flex-grow ${member.bg}`}>
-                <h3 className="font-headline-lg text-headline-lg mb-1">{member.name}</h3>
-                <p className="font-label-bold text-secondary mb-4 uppercase">{member.role}</p>
-                <p className="font-body-md">{member.bio}</p>
+
+        <div className="bg-white brutalist-border brutalist-shadow p-6 md:p-10 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Image Column */}
+            <div className="lg:col-span-5 relative">
+              <div className="aspect-4/5 bg-secondary-container brutalist-border brutalist-shadow absolute top-3 left-3 w-full h-full -z-10"></div>
+              <div className="relative w-full aspect-4/5 overflow-hidden brutalist-border bg-surface-container-high group">
+                <Image
+                  src={founder.img}
+                  alt={founder.name}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
               </div>
             </div>
-          ))}
+
+            {/* Info Column */}
+            <div className="lg:col-span-7 flex flex-col justify-center lg:pl-4">
+              <div className="inline-block self-start bg-primary-container text-white text-sm font-label-bold px-3 py-1 brutalist-border uppercase tracking-wider mb-4">
+                {founder.badge}
+              </div>
+              <h3 className="font-display-lg text-headline-xl md:text-display-lg mb-2 text-on-surface">
+                {founder.name}
+              </h3>
+              <p className="font-label-bold text-secondary text-lg uppercase tracking-wide mb-6 border-b-2 border-outline-heavy pb-3 inline-block">
+                {founder.role}
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface mb-6 leading-relaxed">
+                {founder.bio}
+              </p>
+              <div className="bg-surface-container p-5 brutalist-border border-l-8 border-l-primary-container">
+                <p className="font-body-md italic text-on-surface">
+                  &ldquo;{founder.quote}&rdquo;
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
