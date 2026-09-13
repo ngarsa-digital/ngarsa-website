@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/navigation";
 
 export const Footer = () => {
@@ -57,6 +58,21 @@ export const Footer = () => {
             </div>
           </div>
           <div>
+            <div className="mb-6">
+              <Link
+                href="/"
+                className="inline-block bg-surface p-3 rounded-3xl border-inverse-surface brutalist-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+                aria-label="Ngarsa Digital Home"
+              >
+                <Image
+                  src="/images/ngarsa_vertical.png"
+                  alt="Ngarsa Digital"
+                  width={120}
+                  height={120}
+                  className="w-24 h-auto object-contain"
+                />
+              </Link>
+            </div>
             <h3 className="font-headline-xl text-headline-xl font-black text-surface dark:text-inverse-surface mb-4">{t("title")}</h3>
             <p className="font-body-md text-surface-variant dark:text-on-surface-variant mb-8 max-w-sm">{t("address")}</p>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t-4 border-surface/20 pt-8">
