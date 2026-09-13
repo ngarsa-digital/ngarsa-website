@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import "../globals.css";
 import { Manrope, Work_Sans } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { locales, defaultLocale } from "@/i18n";
+import { getMessages, getTranslations } from "next-intl/server";
+import { locales, defaultLocale } from "@/routing";
 import { Navigation } from "@/features/navigation/navigation";
 import { Footer } from "@/features/footer/footer";
 
@@ -99,7 +100,6 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
