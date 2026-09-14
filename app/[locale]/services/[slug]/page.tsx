@@ -76,10 +76,50 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   if (!serviceSlugs.includes(slug as ServiceSlug)) {
     notFound();
   }
 
-  return <ServiceDetail slug={slug} />;
+  const t = await getTranslations({
+    locale,
+    namespace: `serviceDetail.services.${slug}`,
+  });
+  const baseUrl = "https://ngarsa.com";
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${baseUrl}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${baseUrl}/${locale}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: t("title"),
+        item: `${baseUrl}/${locale}/services/${slug}`,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumb).replace(/</g, "\\u003c"),
+        }}
+      />
+      <ServiceDetail slug={slug} />
+    </>
+  );
 }

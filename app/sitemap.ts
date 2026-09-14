@@ -19,13 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return paths.flatMap((path) =>
     locales.map((locale) => ({
       url: `${base}/${locale}${path}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: path === "" ? 1 : 0.8,
       alternates: {
-        languages: Object.fromEntries(
-          locales.map((l) => [l, `${base}/${l}${path}`])
-        ),
+        languages: Object.fromEntries([
+          ...locales.map((l) => [l, `${base}/${l}${path}`]),
+          ["x-default", `${base}/en${path}`],
+        ]),
       },
     }))
   );

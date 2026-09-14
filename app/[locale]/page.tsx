@@ -6,11 +6,13 @@ const logoUrl = `${baseUrl}/images/ngarsa_horizontal.png`;
 const jsonLdBlocks = [
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
+    "@id": `${baseUrl}/#organization`,
     name: "Ngarsa Digital",
     alternateName: "Ngarsa",
     url: baseUrl,
     logo: logoUrl,
+    image: logoUrl,
     description:
       "Ngarsa Digital is a creative digital agency based in Jatinangor, Sumedang, West Java, Indonesia. We deliver high-quality web development, graphic design, marketing technology, SEO, and branding solutions.",
     foundingDate: "2019",
@@ -24,13 +26,6 @@ const jsonLdBlocks = [
       contactType: "customer service",
       availableLanguage: ["English", "Indonesian"],
     },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Ngarsa Digital",
-    url: baseUrl,
-    image: logoUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jln. Letda Lukito No.16",
@@ -94,6 +89,15 @@ const jsonLdBlocks = [
   },
   {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${baseUrl}/#website`,
+    url: baseUrl,
+    name: "Ngarsa Digital",
+    inLanguage: ["en", "id"],
+    publisher: { "@id": `${baseUrl}/#organization` },
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
       {
@@ -119,36 +123,6 @@ const jsonLdBlocks = [
           "@type": "Answer",
           text: "Yes, at Ngarsa Digital, we support and provide free consultation about creative digital and marketing communications strategy.",
         },
-      },
-    ],
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: `${baseUrl}/`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: `${baseUrl}/services`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "About",
-        item: `${baseUrl}/about`,
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Contact",
-        item: `${baseUrl}/contact`,
       },
     ],
   },
