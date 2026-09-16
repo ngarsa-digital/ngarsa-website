@@ -65,29 +65,14 @@ export const Navigation = () => {
     <>
       <nav className="sticky top-0 z-40 flex justify-between items-center px-gutter py-4 bg-surface dark:bg-inverse-surface max-w-full mx-auto w-full border-b-4 border-inverse-surface dark:border-surface-variant shadow-[8px_8px_0px_0px_rgba(46,49,49,1)]">
         <Link href="/" className="flex items-center gap-2 group focus:outline-none" aria-label="Ngarsa Digital Home">
-          <div className="hidden sm:flex items-center">
-            <Image
-              src="/images/ngarsa_horizontal.png"
-              alt="Ngarsa Digital"
-              width={160}
-              height={40}
-              priority
-              className="h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-            />
-          </div>
-          <div className="flex sm:hidden items-center gap-2">
-            <Image
-              src="/images/ngarsa_vertical.png"
-              alt="Ngarsa"
-              width={36}
-              height={36}
-              priority
-              className="h-9 w-9 object-contain"
-            />
-            <span className="font-headline-lg text-headline-lg font-black text-on-surface dark:text-inverse-on-surface uppercase tracking-tight">
-              {t("brand")}
-            </span>
-          </div>
+          <Image
+            src="/images/ngarsa_horizontal.png"
+            alt="Ngarsa Digital"
+            width={160}
+            height={40}
+            priority
+            className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+          />
         </Link>
 
         <div className="hidden md:flex gap-8 items-center">
