@@ -112,18 +112,18 @@ export const ServiceVideoShowcase = ({
           </div>
 
           <div className="hidden sm:block">
-            <span className="font-label-bold text-label-bold text-surface-variant font-mono uppercase tracking-widest text-[11px]">
+            <span className="font-label-bold text-label-bold text-surface-variant uppercase tracking-widest text-[11px]">
               ID: {slug.toUpperCase()} {"//"} GOOGLE AI VISUAL CORE
             </span>
           </div>
 
-          <div className="inline-block bg-primary-fixed text-inverse-surface px-2 py-0.5 border-2 border-inverse-surface font-label-bold text-[10px] uppercase font-mono tracking-wider rotate-1">
+          <div className="inline-block bg-primary-fixed text-inverse-surface px-2 py-0.5 border-2 border-inverse-surface font-label-bold text-[10px] uppercase tracking-wider rotate-1">
             {tagLabel}
           </div>
         </div>
 
         {/* Video Canvas / Display Area */}
-        <div className="relative w-full aspect-video min-h-[320px] md:min-h-[440px] bg-inverse-surface overflow-hidden flex items-center justify-center group">
+        <div className="relative w-full aspect-video min-h-80 md:min-h-110 bg-inverse-surface overflow-hidden flex items-center justify-center group">
           {hasVideoFile && videoSrc ? (
             <video
               ref={videoRef}
@@ -137,11 +137,11 @@ export const ServiceVideoShowcase = ({
               onEnded={() => setIsPlaying(false)}
             />
           ) : (
-            <div className="relative w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-[#042013] via-[#004e5e] to-[#0b0f10] select-none overflow-hidden">
+            <div className="relative w-full h-full flex flex-col items-center justify-center p-6 bg-linear-to-br from-on-tertiary-fixed via-[#004e5e] to-outline-heavy select-none overflow-hidden">
               {/* Decorative Geometric Grid & Scanlines */}
               <div className="absolute inset-0 pattern-dots text-white/20"></div>
               <div
-                className={`absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent h-16 w-full ${
+                className={`absolute inset-0 bg-linear-to-b from-transparent via-white/5 to-transparent h-16 w-full ${
                   isPlaying ? "animate-pulse" : ""
                 }`}
               ></div>
@@ -169,10 +169,10 @@ export const ServiceVideoShowcase = ({
                   </span>
                 </div>
 
-                <h3 className="font-headline-xl text-headline-xl text-white mb-3 tracking-tight drop-shadow-md">
+                <h3 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-3 tracking-tight drop-shadow-md leading-tight wrap-break-word">
                   {title}
                 </h3>
-                <p className="font-body-md text-body-md text-surface-container-high max-w-md mx-auto line-clamp-3 mb-6">
+                <p className="font-body-md text-body-md text-surface-container-high max-w-md mx-auto line-clamp-3 mb-6 leading-relaxed wrap-break-word">
                   {description}
                 </p>
 
@@ -180,7 +180,9 @@ export const ServiceVideoShowcase = ({
                 <button
                   onClick={togglePlay}
                   className="bg-primary-fixed text-inverse-surface border-4 border-inverse-surface brutalist-shadow hover:scale-105 active:scale-95 transition-all p-5 rounded-full flex items-center justify-center cursor-pointer"
-                  aria-label={isPlaying ? "Pause Simulation" : "Play Simulation"}
+                  aria-label={
+                    isPlaying ? "Pause Simulation" : "Play Simulation"
+                  }
                 >
                   <span className="material-symbols-outlined text-4xl">
                     {isPlaying ? "pause" : "play_arrow"}
