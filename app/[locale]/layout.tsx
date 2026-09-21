@@ -7,6 +7,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { locales, defaultLocale } from "@/routing";
 import { Navigation } from "@/features/navigation/navigation";
 import { Footer } from "@/features/footer/footer";
+import { ScrollToTop } from "@/features/navigation/scroll-to-top";
 
 const manrope = Manrope({
   variable: "--manrope",
@@ -150,8 +151,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen flex flex-col">
             <Navigation />
-            <main className="flex-grow bg-background">{children}</main>
+            <main className="grow bg-background">{children}</main>
             <Footer />
+            <ScrollToTop />
           </div>
         </NextIntlClientProvider>
       </body>
