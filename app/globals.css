@@ -150,3 +150,99 @@
     background-size: 10px 10px;
   }
 }
+
+/* Neo-Brutalist Leaflet Map Overrides */
+.leaflet-container {
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-surface-container, #eceeee);
+}
+
+.custom-office-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Neo-Brutalist Zoom Controls */
+.leaflet-touch .leaflet-bar,
+.leaflet-bar {
+  border: 3px solid #0b0f10 !important;
+  border-radius: 0px !important;
+  box-shadow: 4px 4px 0px 0px rgba(11, 15, 16, 1) !important;
+  overflow: hidden;
+}
+
+.leaflet-bar a,
+.leaflet-touch .leaflet-bar a {
+  background-color: #ffffff !important;
+  color: #0b0f10 !important;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  border-radius: 0px !important;
+  border-bottom: 2px solid #0b0f10 !important;
+  width: 32px !important;
+  height: 32px !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.leaflet-bar a:last-child,
+.leaflet-touch .leaflet-bar a:last-child {
+  border-bottom: none !important;
+}
+
+.leaflet-bar a:hover,
+.leaflet-touch .leaflet-bar a:hover {
+  background-color: #004e5e !important;
+  color: #ffffff !important;
+}
+
+/* Neo-Brutalist Popup */
+.neo-brutalist-popup .leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #191c1d !important;
+  border: 3px solid #0b0f10 !important;
+  border-radius: 0px !important;
+  box-shadow: 6px 6px 0px 0px rgba(11, 15, 16, 1) !important;
+  padding: 0 !important;
+}
+
+.neo-brutalist-popup .leaflet-popup-content {
+  margin: 14px 16px !important;
+  line-height: 1.4 !important;
+}
+
+.neo-brutalist-popup .leaflet-popup-tip-container {
+  display: none !important;
+}
+
+.neo-brutalist-popup a.leaflet-popup-close-button {
+  top: 6px !important;
+  right: 6px !important;
+  color: #0b0f10 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  width: 20px !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+}
+
+.neo-brutalist-popup a.leaflet-popup-close-button:hover {
+  color: #ba1a1a !important;
+}
+
+/* Attribution styling */
+.leaflet-control-attribution {
+  background: rgba(248, 250, 250, 0.85) !important;
+  border: 1px solid #0b0f10 !important;
+  font-size: 10px !important;
+  color: #3f484c !important;
+  padding: 2px 6px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #004e5e !important;
+  font-weight: 600 !important;
+}

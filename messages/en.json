@@ -15,7 +15,8 @@
     "contact": "Contact",
     "letsTalk": "Let's Talk",
     "closeMenu": "Close Menu",
-    "language": "Language"
+    "language": "Language",
+    "scrollToTop": "Scroll to top"
   },
   "home": {
     "hero": {
@@ -118,7 +119,7 @@
     },
     "info": {
       "hq": {
-        "label": "HQ",
+        "label": "Headquarters",
         "address": "Jatinangor, West Java Indonesia, 45363"
       },
       "email": {

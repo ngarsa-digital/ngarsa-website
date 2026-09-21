@@ -1,11 +1,11 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import ContactMap from "./contact-map";
 
 export const Contact = async () => {
   const t = await getTranslations("contact");
 
   return (
-    <div className="flex-grow w-full max-w-[1280px] mx-auto px-margin py-section-gap flex flex-col gap-section-gap">
+    <div className="grow w-full max-w-7xl mx-auto px-margin py-section-gap flex flex-col gap-section-gap">
       <section className="flex flex-col items-start gap-8 relative z-10">
         <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white bg-primary-container inline-block px-4 py-2 border-4 border-outline-heavy shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] -rotate-2">
           {t("hero.title")}
@@ -56,17 +56,20 @@ export const Contact = async () => {
               <span className="material-symbols-outlined text-4xl bg-inverse-surface text-white p-2 w-fit">mail</span>
               <div>
                 <h3 className="font-label-bold uppercase mb-1">{t("info.email.label")}</h3>
-                <p className="font-bold break-words">{t("info.email.address")}</p>
+                <a
+                  href={`mailto:${t("info.email.address")}`}
+                  className="font-bold wrap-break-word hover:text-primary transition-colors underline decoration-2 underline-offset-4"
+                >
+                  {t("info.email.address")}
+                </a>
               </div>
             </div>
           </div>
-          <div className="relative w-full h-[400px] border-4 border-outline-heavy shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] bg-surface-container overflow-hidden group">
-            <Image src="/images/map.jpg" alt="Map showing the Ngarsa Digital office location in Jatinangor, Sumedang" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-              <span className="material-symbols-outlined text-6xl text-primary drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]" style={{ fontVariationSettings: '"FILL" 1' }}>
-                location_on
-              </span>
-            </div>
+          <div className="relative w-full h-100 border-4 border-outline-heavy shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] bg-surface-container overflow-hidden">
+            <ContactMap
+              hqTitle={t("info.hq.label")}
+              hqAddress={t("info.hq.address")}
+            />
           </div>
         </div>
       </section>
