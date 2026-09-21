@@ -45,7 +45,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const isDefault = locale === defaultLocale;
-  const baseUrl = "https://ngarsa.com";
+  const baseUrl = "https://www.ngarsa.com";
   const t = await getTranslations({ locale, namespace: "seo" });
 
   return {

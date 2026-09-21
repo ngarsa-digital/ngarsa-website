@@ -36,7 +36,7 @@ export const Contact = async () => {
             <input autoComplete="off" name="_honey" style={{ display: "none" }} tabIndex={-1} type="text" />
             <input name="_autoresponse" type="hidden" value="Thank you for reach me out on this form contact and submitted your message. -- ngarsa.com" />
             <input name="_template" type="hidden" value="basic" />
-            <input name="_next" type="hidden" value="https://ngarsa.com/" />
+            <input name="_next" type="hidden" value="https://www.ngarsa.com/" />
             <button className="bg-primary border-4 border-inverse-surface text-white font-headline-lg px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all uppercase self-start" type="submit">
               {t("form.submit")}
             </button>

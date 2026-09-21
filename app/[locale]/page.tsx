@@ -1,6 +1,6 @@
 import { Home } from "@/features/home/home";
 
-const baseUrl = "https://ngarsa.com";
+const baseUrl = "https://www.ngarsa.com";
 const logoUrl = `${baseUrl}/images/ngarsa_horizontal.png`;
 
 const jsonLdBlocks = [

@@ -85,7 +85,7 @@ export default async function Page({ params }: Props) {
     locale,
     namespace: `serviceDetail.services.${slug}`,
   });
-  const baseUrl = "https://ngarsa.com";
+  const baseUrl = "https://www.ngarsa.com";
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

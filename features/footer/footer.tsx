@@ -95,7 +95,7 @@ export const Footer = () => {
               <p className="font-body-md text-surface-variant dark:text-on-surface-variant">
                 {t.rich("copyright", {
                   link: (chunks) => (
-                    <a className="hover:text-primary-fixed transition-colors" href="https://ngarsa.com/" rel="noopener" target="_blank">
+                    <a className="hover:text-primary-fixed transition-colors" href="https://www.ngarsa.com/" rel="noopener" target="_blank">
                       {chunks}
                     </a>
                   ),

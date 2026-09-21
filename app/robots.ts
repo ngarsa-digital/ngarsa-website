@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "*", allow: "/" },
       ...aiCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
-    sitemap: "https://ngarsa.com/sitemap.xml",
+    sitemap: "https://www.ngarsa.com/sitemap.xml",
   };
 }
