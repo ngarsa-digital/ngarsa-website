@@ -4,6 +4,23 @@ type Props = {
   namespace: "privacy" | "terms";
 };
 
+const renderLegalBody = (text: string) => {
+  const parts = text.split(/(hello@ngarsa\.com)/g);
+  return parts.map((part, i) =>
+    part === "hello@ngarsa.com" ? (
+      <a
+        key={i}
+        href="mailto:hello@ngarsa.com"
+        className="text-primary hover:underline font-bold transition-colors"
+      >
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  );
+};
+
 export const Legal = async ({ namespace }: Props) => {
   const t = await getTranslations(namespace);
   const sections = t.raw("sections") as { heading: string; body: string }[];
@@ -39,7 +56,7 @@ export const Legal = async ({ namespace }: Props) => {
               {section.heading}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface leading-relaxed whitespace-pre-line">
-              {section.body}
+              {renderLegalBody(section.body)}
             </p>
           </article>
         ))}
