@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Link } from "@/navigation";
 import { getTranslations } from "next-intl/server";
+import { ClientsSection } from "@/features/home/clients-section";
 
 export const Home = async () => {
   const t = await getTranslations("home");
@@ -14,7 +15,7 @@ export const Home = async () => {
 
   return (
     <div className="flex flex-col gap-0">
-      <section className="max-w-[1280px] mx-auto px-gutter py-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative">
+      <section className="max-w-7xl mx-auto px-gutter py-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative">
         <div className="flex flex-col items-start z-10">
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
             {t.rich("hero.title", {
@@ -32,13 +33,15 @@ export const Home = async () => {
             <span className="material-symbols-outlined">arrow_forward</span>
           </Link>
         </div>
-        <div className="relative w-full h-[400px] md:h-[600px] border-4 border-inverse-surface brutalist-shadow bg-surface-container-high overflow-hidden z-0">
+        <div className="relative w-full h-100 md:h-150 border-4 border-inverse-surface brutalist-shadow bg-surface-container-high overflow-hidden z-0">
           <Image src="/images/hero.jpg" alt="Ngarsa Digital creative team at work" fill sizes="(max-width: 768px) 100vw, 50vw" priority className="object-cover" />
         </div>
       </section>
 
-      <section className="max-w-[1280px] mx-auto px-gutter py-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative bg-surface-container-low border-y-4 border-inverse-surface w-full">
-        <div className="relative w-full h-[400px] border-4 border-inverse-surface brutalist-shadow bg-surface-bright overflow-hidden order-2 md:order-1">
+      <ClientsSection />
+
+      <section className="max-w-7xl mx-auto px-gutter py-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative bg-surface-container-low border-y-4 border-inverse-surface w-full">
+        <div className="relative w-full h-100 border-4 border-inverse-surface brutalist-shadow bg-surface-bright overflow-hidden order-2 md:order-1">
           <Image src="/images/about-snippet.jpg" alt="Inside the Ngarsa Digital studio" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
         <div className="flex flex-col items-start order-1 md:order-2 pl-0 md:pl-12">
@@ -54,7 +57,7 @@ export const Home = async () => {
         </div>
       </section>
 
-      <section className="max-w-[1280px] mx-auto px-gutter py-section-gap relative">
+      <section className="max-w-7xl mx-auto px-gutter py-section-gap relative">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <h2 className="font-headline-xl text-headline-xl text-on-surface max-w-md">{t("services.title")}</h2>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-sm">{t("services.subtitle")}</p>
