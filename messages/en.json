@@ -40,6 +40,11 @@
         "designBranding": "Design & Branding",
         "description": "We make digital solutions simple, elegant and iconic."
       }
+    },
+    "clients": {
+      "badge": "Trusted & Partners",
+      "title": "Selected Clients & Ecosystem Partners",
+      "subtitle": "Proudly collaborating with visionary teams, platforms, and media networks."
     }
   },
   "services": {
