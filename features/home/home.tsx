@@ -17,17 +17,21 @@ export const Home = async () => {
     <div className="flex flex-col gap-0">
       <section className="max-w-7xl mx-auto px-gutter py-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative">
         <div className="flex flex-col items-start z-10">
-          <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+          <h1 className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[62px] xl:text-[68px] font-extrabold leading-[1.12] tracking-tight text-on-surface mb-6">
             {t.rich("hero.title", {
               quality: (chunks) => (
-                <span className="bg-primary-fixed px-2 border-4 border-inverse-surface inline-block -rotate-2">{chunks}</span>
+                <span className="bg-primary-fixed text-on-surface px-2 py-0.5 border-3 md:border-4 border-inverse-surface inline-block -rotate-2 whitespace-nowrap mx-1 align-middle">
+                  {chunks}
+                </span>
               ),
               aiPowered: (chunks) => (
-                <span className="bg-primary-fixed px-2 border-4 border-inverse-surface inline-block rotate-1">{chunks}</span>
+                <span className="bg-primary-fixed text-on-surface px-2 py-0.5 border-3 md:border-4 border-inverse-surface inline-block rotate-1 whitespace-nowrap mx-1 align-middle">
+                  {chunks}
+                </span>
               ),
             })}
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">{t("hero.description")}</p>
+          <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg leading-relaxed">{t("hero.description")}</p>
           <Link href="/contact" className="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 border-4 border-inverse-surface brutalist-shadow font-label-bold text-label-bold uppercase">
             {t("hero.cta")}
             <span className="material-symbols-outlined">arrow_forward</span>
