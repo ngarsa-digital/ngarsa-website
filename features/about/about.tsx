@@ -18,10 +18,15 @@ export const About = async () => {
       <section className="mt-section-gap mb-section-gap relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-7 z-10">
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg bg-primary-container text-white inline-block px-4 py-2 brutalist-border shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] -rotate-1 mb-8">
-              {t("hero.title")}
+            <h1 className="flex flex-col items-start gap-2.5 mb-8">
+              <span className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[58px] font-extrabold leading-none tracking-tight bg-primary-container text-white px-4 py-2.5 brutalist-border shadow-[6px_6px_0px_0px_rgba(46,49,49,1)] -rotate-1 inline-block whitespace-nowrap">
+                {t("hero.titleLine1")}
+              </span>
+              <span className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[58px] font-extrabold leading-none tracking-tight bg-inverse-surface text-primary-fixed px-4 py-2.5 brutalist-border shadow-[6px_6px_0px_0px_rgba(46,49,49,1)] rotate-1 inline-block whitespace-nowrap">
+                {t("hero.titleLine2")}
+              </span>
             </h1>
-            <p className="font-body-lg text-body-lg mt-6 bg-surface-container p-6 brutalist-border shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] max-w-2xl translate-x-4">
+            <p className="font-body-lg text-body-lg bg-surface-container p-6 brutalist-border shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] max-w-2xl translate-x-2 md:translate-x-4 leading-relaxed">
               {t("hero.description")}
             </p>
           </div>

@@ -85,18 +85,18 @@ export const ServiceDetail = async ({ slug }: ServiceDetailProps) => {
       {/* Hero Section */}
       <section className="px-margin mb-16">
         <div className="relative inline-block mb-6">
-          <span className="bg-primary-container px-6 py-2 inline-block -rotate-2 brutalist-border shadow-[8px_8px_0px_0px_#2e3131]">
-            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white m-0 relative z-10 leading-tight md:leading-tight wrap-break-word">
+          <span className="bg-primary-container px-5 py-2.5 sm:px-6 sm:py-3 inline-block -rotate-1 brutalist-border shadow-[6px_6px_0px_0px_#2e3131] max-w-full">
+            <h1 className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[58px] font-extrabold text-white m-0 relative z-10 leading-none tracking-tight">
               {tService("title")}
             </h1>
           </span>
         </div>
 
-        <div className="inline-block bg-primary-fixed text-inverse-surface px-3 py-1 border-2 border-inverse-surface font-label-bold text-label-bold uppercase tracking-wider mb-6 rotate-1 wrap-break-word">
+        <div className="inline-block bg-primary-fixed text-inverse-surface px-3 py-1 border-2 border-inverse-surface font-label-bold text-label-bold uppercase tracking-wider mb-6 rotate-1">
           {tService("tagline")}
         </div>
 
-        <p className="font-body-lg text-body-lg max-w-3xl pl-6 border-l-4 border-primary-container mb-10 text-on-surface leading-relaxed wrap-break-word">
+        <p className="font-body-lg text-body-lg max-w-3xl pl-6 border-l-4 border-primary-container mb-10 text-on-surface leading-relaxed">
           {tService("intro")}
         </p>
 

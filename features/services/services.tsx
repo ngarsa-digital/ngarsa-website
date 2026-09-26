@@ -8,12 +8,16 @@ export const Services = async () => {
   return (
     <div className="max-w-7xl mx-auto w-full pt-section-gap pb-section-gap">
       <section className="px-margin mb-section-gap">
-        <div className="relative inline-block mb-8">
-          <span className="bg-primary-container px-6 py-2 inline-block -rotate-2 brutalist-border shadow-[8px_8px_0px_0px_#2e3131]">
-            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white m-0 relative z-10 leading-tight md:leading-tight wrap-break-word">{t("title")}</h1>
+        <div className="relative inline-block mb-6">
+          <span className="bg-primary-container px-5 py-2.5 sm:px-6 sm:py-3 inline-block -rotate-1 brutalist-border shadow-[6px_6px_0px_0px_#2e3131] max-w-full">
+            <h1 className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold text-white m-0 relative z-10 leading-none tracking-tight">
+              {t("title")}
+            </h1>
           </span>
         </div>
-        <p className="font-body-lg text-body-lg max-w-3xl mt-8 pl-4 border-l-4 border-primary-container leading-relaxed wrap-break-word">{t("intro")}</p>
+        <p className="font-body-lg text-body-lg max-w-3xl pl-6 border-l-4 border-primary-container text-on-surface-variant leading-relaxed">
+          {t("intro")}
+        </p>
       </section>
 
       <section className="px-margin mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-8">

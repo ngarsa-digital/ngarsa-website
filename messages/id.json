@@ -49,7 +49,7 @@
   },
   "services": {
     "title": "Keahlian Kami",
-    "intro": "Kami memadukan kreativitas mentah dengan presisi struktural untuk membangun pengalaman digital yang menolak untuk diabaikan. Selami disiplin inti kami.",
+    "intro": "Kami memadukan kreativitas orisinal dengan presisi struktural untuk membangun pengalaman digital yang menolak untuk diabaikan. Selami disiplin inti kami.",
     "cards": {
       "webCreative": {
         "label": "01. Kode & Kerajinan",
@@ -85,8 +85,10 @@
   },
   "about": {
     "hero": {
-      "title": "MENDEFINISIKAN ULANG KERAJINAN DIGITAL",
-      "description": "Kami adalah Ngarsa. Agensi kreatif yang dibangun atas keyakinan bahwa kejujuran mentah dan eksekusi berani menembus kebisingan digital."
+      "title": "Meredefinisi Karya Digital",
+      "titleLine1": "MEREDEFINISI",
+      "titleLine2": "KARYA DIGITAL",
+      "description": "Kami adalah Ngarsa. Agensi kreatif yang dibangun atas keyakinan bahwa autentisitas dan eksekusi berani mampu menghadirkan dampak nyata di era digital."
     },
     "mission": {
       "title": "Misi Kami",
@@ -110,7 +112,7 @@
   "contact": {
     "hero": {
       "title": "Hubungi Kami",
-      "description": "Siap mendorong batasan? Kirimkan pesan kepada kami dan mari kita buat sesuatu yang sangat efektif bersama."
+      "description": "Siap melampaui batasan? Hubungi kami dan mari bangun solusi digital yang berdampak nyata bersama-sama."
     },
     "form": {
       "title": "Kirim Pesan",

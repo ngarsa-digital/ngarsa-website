@@ -30,10 +30,10 @@ export const Legal = async ({ namespace }: Props) => {
       <section className="mt-section-gap mb-section-gap">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-7 z-10">
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg bg-primary-container text-white inline-block px-4 py-2 brutalist-border shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] -rotate-1 mb-8">
+            <h1 className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[58px] font-extrabold bg-primary-container text-white inline-block px-5 py-2.5 sm:px-6 sm:py-3 brutalist-border shadow-[6px_6px_0px_0px_rgba(46,49,49,1)] -rotate-1 mb-8 leading-none tracking-tight max-w-full">
               {t("title")}
             </h1>
-            <p className="font-body-lg text-body-lg mt-6 bg-surface-container p-6 brutalist-border shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] max-w-2xl translate-x-4">
+            <p className="font-body-lg text-body-lg bg-surface-container p-6 brutalist-border shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] max-w-2xl translate-x-2 md:translate-x-4 leading-relaxed text-on-surface">
               {t("description")}
             </p>
           </div>

@@ -6,11 +6,11 @@ export const Contact = async () => {
 
   return (
     <div className="grow w-full max-w-7xl mx-auto px-margin py-section-gap flex flex-col gap-section-gap">
-      <section className="flex flex-col items-start gap-8 relative z-10">
-        <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white bg-primary-container inline-block px-4 py-2 border-4 border-outline-heavy shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] -rotate-2">
+      <section className="flex flex-col items-start gap-6 relative z-10">
+        <h1 className="font-manrope text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold text-white bg-primary-container inline-block px-5 py-2.5 sm:px-6 sm:py-3 brutalist-border shadow-[6px_6px_0px_0px_rgba(46,49,49,1)] -rotate-1 leading-none tracking-tight">
           {t("hero.title")}
         </h1>
-        <p className="font-body-lg text-body-lg max-w-2xl bg-white p-6 border-4 border-outline-heavy shadow-[4px_4px_0px_0px_rgba(46,49,49,1)]">
+        <p className="font-body-lg text-body-lg max-w-2xl bg-white p-6 brutalist-border shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] leading-relaxed text-on-surface">
           {t("hero.description")}
         </p>
       </section>

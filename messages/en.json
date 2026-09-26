@@ -85,8 +85,10 @@
   },
   "about": {
     "hero": {
-      "title": "REDEFINING DIGITAL CRAFT",
-      "description": "We are Ngarsa. A creative agency built on the belief that raw honesty and bold execution cut through the digital noise."
+      "title": "Redefining Digital Craft",
+      "titleLine1": "REDEFINING",
+      "titleLine2": "DIGITAL CRAFT",
+      "description": "We are Ngarsa. A creative agency built on the belief that authenticity and bold execution cut through the digital noise."
     },
     "mission": {
       "title": "Our Mission",
