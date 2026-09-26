@@ -346,24 +346,31 @@ export const ServiceDetail = async ({ slug }: ServiceDetailProps) => {
 
       {/* Project Initiation Call to Action */}
       <section className="px-margin">
-        <div className="bg-primary-container p-6 sm:p-12 brutalist-border brutalist-shadow text-center relative overflow-hidden">
-          <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-inverse-on-surface mb-6 leading-tight md:leading-tight wrap-break-word">
+        <div className="bg-primary-container p-8 sm:p-12 md:p-16 brutalist-border brutalist-shadow text-center relative overflow-hidden">
+          <div className="absolute inset-0 pattern-dots opacity-10 pointer-events-none" />
+          <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+            <div className="inline-block bg-primary-fixed text-inverse-surface px-3 py-1 brutalist-border shadow-[2px_2px_0px_0px_#0b0f10] font-mono text-[11px] font-bold uppercase tracking-wider mb-4">
+              {tCommon("initiateProject")}
+            </div>
+            <h2 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-inverse-on-surface mb-4 leading-snug md:leading-snug text-balance wrap-break-word">
               {tService("cta.title")}
             </h2>
-            <p className="font-body-lg text-surface-container-high mb-8 leading-relaxed wrap-break-word">
+            <p className="font-body-md sm:font-body-lg text-surface-container-high max-w-xl mb-8 leading-relaxed wrap-break-word">
               {tService("cta.description")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-block bg-surface-container-lowest text-primary-container brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-6 sm:px-8 py-3.5 sm:py-4 font-headline-lg text-[18px] sm:text-[22px] font-bold hover:bg-inverse-surface hover:text-white transition-all wrap-break-word"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-surface-container-lowest text-primary-container brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-7 py-3.5 sm:py-4 font-label-bold text-label-bold uppercase hover:bg-inverse-surface hover:text-white transition-all wrap-break-word"
               >
-                {tService("cta.button")}
+                <span>{tService("cta.button")}</span>
+                <span className="material-symbols-outlined text-[18px]">
+                  arrow_forward
+                </span>
               </Link>
               <Link
                 href="/services"
-                className="inline-block bg-primary-fixed text-inverse-surface brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-6 py-3.5 sm:py-4 font-label-bold text-label-bold uppercase hover:bg-white transition-all wrap-break-word"
+                className="inline-flex items-center justify-center w-full sm:w-auto bg-primary-fixed text-inverse-surface brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-6 py-3.5 sm:py-4 font-label-bold text-label-bold uppercase hover:bg-white transition-all wrap-break-word"
               >
                 {tCommon("viewAllServices")}
               </Link>

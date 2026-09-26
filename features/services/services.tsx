@@ -139,12 +139,23 @@ export const Services = async () => {
       </section>
 
       <section className="px-margin mb-section-gap">
-        <div className="bg-primary-container p-6 sm:p-12 brutalist-border brutalist-shadow text-center relative overflow-hidden">
-          <div className="relative z-10">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-inverse-on-surface mb-6 leading-tight md:leading-tight wrap-break-word">{t("cta.title")}</h2>
-            <p className="font-body-lg text-surface-container-high max-w-2xl mx-auto mb-8 leading-relaxed wrap-break-word">{t("cta.description")}</p>
-            <Link href="/contact" className="inline-block bg-surface-container-lowest text-primary-container brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-6 sm:px-8 py-3.5 sm:py-4 font-headline-lg text-[18px] sm:text-[24px] font-bold hover:bg-inverse-surface hover:text-white transition-all wrap-break-word">
-              {t("cta.button")}
+        <div className="bg-primary-container p-8 sm:p-12 md:p-16 brutalist-border brutalist-shadow text-center relative overflow-hidden">
+          <div className="absolute inset-0 pattern-dots opacity-10 pointer-events-none" />
+          <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+            <h2 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-inverse-on-surface mb-4 leading-snug md:leading-snug text-balance wrap-break-word">
+              {t("cta.title")}
+            </h2>
+            <p className="font-body-md sm:font-body-lg text-surface-container-high max-w-xl mx-auto mb-8 leading-relaxed wrap-break-word">
+              {t("cta.description")}
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-surface-container-lowest text-primary-container brutalist-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-7 py-3.5 sm:py-4 font-label-bold text-label-bold uppercase hover:bg-inverse-surface hover:text-white transition-all wrap-break-word"
+            >
+              <span>{t("cta.button")}</span>
+              <span className="material-symbols-outlined text-[18px]">
+                arrow_forward
+              </span>
             </Link>
           </div>
         </div>
