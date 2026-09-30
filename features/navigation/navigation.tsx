@@ -136,8 +136,8 @@ export const Navigation = () => {
       </nav>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-surface flex flex-col p-gutter md:hidden">
-          <div className="flex justify-between items-center py-4 border-b-4 border-inverse-surface mb-8">
+        <div className="fixed inset-0 z-50 bg-surface flex flex-col px-4 py-3 sm:px-6 sm:py-4 h-dvh max-h-dvh overflow-y-auto overscroll-contain md:hidden pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+          <div className="flex justify-between items-center py-2 border-b-4 border-inverse-surface mb-3 shrink-0">
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
@@ -147,56 +147,12 @@ export const Navigation = () => {
               <Image
                 src="/images/ngarsa_horizontal.png"
                 alt="Ngarsa Digital"
-                width={150}
-                height={38}
-                className="h-9 w-auto object-contain"
+                width={130}
+                height={32}
+                className="h-8 w-auto object-contain"
               />
             </Link>
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              aria-label={t("closeMenu")}
-              className="border-4 border-inverse-surface bg-error-container hover:bg-error hover:text-on-error transition-colors duration-200 shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none p-2 flex items-center justify-center"
-            >
-              <span className="material-symbols-outlined" style={{ fontSize: "32px" }}>
-                close
-              </span>
-            </button>
-          </div>
-
-          <nav className="grow flex flex-col gap-6 justify-center">
-            {navLinks.map((link) => {
-              const active = isActive(link.path);
-              return (
-                <Link
-                  key={link.path}
-                  href={link.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`group relative block w-full border-4 border-inverse-surface px-6 py-8 shadow-[8px_8px_0px_0px_rgba(46,49,49,1)] active:translate-x-2 active:translate-y-2 active:shadow-none transition-all duration-200 ${
-                    active ? "bg-primary-container" : "bg-surface hover:bg-surface-container-high"
-                  }`}
-                >
-                  <div className="flex justify-between items-center">
-                    <span className={`font-display-lg-mobile text-display-lg-mobile font-black transition-colors ${active ? "text-inverse-surface group-hover:text-surface-tint" : "text-on-surface-variant group-hover:text-primary"}`}>
-                      {link.name}
-                    </span>
-                    {active && (
-                      <span className="material-symbols-outlined text-4xl text-inverse-surface transform transition-all">
-                        arrow_forward
-                      </span>
-                    )}
-                  </div>
-                  {active && <div className="absolute -left-2 -top-2 w-4 h-4 bg-inverse-surface border-2 border-surface"></div>}
-                </Link>
-              );
-            })}
-          </nav>
-
-          <div className="mt-auto pt-8 border-t-4 border-inverse-surface flex flex-col gap-4">
-            <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="w-full border-4 border-inverse-surface bg-primary text-on-primary font-headline-lg text-headline-lg py-4 shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-200 flex items-center justify-center gap-2">
-              {t("letsTalk")}
-              <span className="material-symbols-outlined">arrow_outward</span>
-            </Link>
-            <div className="flex justify-center gap-4 py-4">
+            <div className="flex items-center gap-2">
               <button
                 onClick={() => {
                   const nextLocale = currentLocale === "en" ? "id" : "en";
@@ -204,14 +160,71 @@ export const Navigation = () => {
                   setIsMenuOpen(false);
                 }}
                 aria-label={t("language")}
-                className="border-4 border-inverse-surface px-4 py-3 bg-tertiary-container shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none flex items-center gap-2 font-bold"
+                className="border-2 border-inverse-surface px-2.5 py-1 bg-tertiary-container text-inverse-surface shadow-[2px_2px_0px_0px_rgba(46,49,49,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1.5 font-bold transition-all text-xs"
               >
-                <span className="material-symbols-outlined text-inverse-surface">language</span>
-                <span className="font-label-bold text-label-bold uppercase text-inverse-surface">
+                <span className="material-symbols-outlined text-[16px]">language</span>
+                <span className="font-label-bold text-label-bold uppercase">
                   {currentLocale === "en" ? "ID" : "EN"}
                 </span>
               </button>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                aria-label={t("closeMenu")}
+                className="border-2 border-inverse-surface bg-error-container hover:bg-error hover:text-on-error transition-colors duration-200 shadow-[2px_2px_0px_0px_rgba(46,49,49,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none p-1.5 flex items-center justify-center"
+              >
+                <span className="material-symbols-outlined text-2xl">
+                  close
+                </span>
+              </button>
             </div>
+          </div>
+
+          <nav className="flex flex-col gap-2.5 my-auto py-2">
+            {navLinks.map((link, index) => {
+              const active = isActive(link.path);
+              return (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`group relative block w-full border-4 border-inverse-surface px-4 py-3 sm:py-3.5 shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-200 ${
+                    active ? "bg-primary-container text-white" : "bg-surface hover:bg-surface-container-high"
+                  }`}
+                >
+                  <div className="flex justify-between items-center">
+                    <div className="flex items-baseline gap-2.5">
+                      <span className={`text-xs font-mono font-bold ${active ? "text-white/80" : "text-outline"}`}>
+                        0{index + 1}
+                      </span>
+                      <span className={`font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl font-black tracking-tight transition-colors ${
+                        active
+                          ? "text-white group-hover:text-surface-tint"
+                          : "text-on-surface-variant group-hover:text-primary"
+                      }`}>
+                        {link.name}
+                      </span>
+                    </div>
+                    {active && (
+                      <span className="material-symbols-outlined text-2xl text-white transform transition-all">
+                        arrow_forward
+                      </span>
+                    )}
+                  </div>
+                  {active && <div className="absolute -left-1.5 -top-1.5 w-3 h-3 bg-inverse-surface border-2 border-surface"></div>}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="mt-auto pt-3 border-t-4 border-inverse-surface shrink-0">
+            <Link
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full border-4 border-inverse-surface bg-primary text-on-primary font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg py-3 shadow-[4px_4px_0px_0px_rgba(46,49,49,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-200 flex items-center justify-center gap-2 font-bold"
+            >
+              {t("letsTalk")}
+              <span className="material-symbols-outlined text-2xl">arrow_outward</span>
+            </Link>
           </div>
         </div>
       )}
