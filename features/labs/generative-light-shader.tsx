@@ -148,7 +148,7 @@ export const GenerativeLightShader = () => {
     const uTime = gl.getUniformLocation(program, "u_time");
 
     let animationFrameId: number;
-    let startTime = performance.now();
+    const startTime = performance.now();
 
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
