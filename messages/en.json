@@ -11,6 +11,7 @@
     "brand": "Ngarsa",
     "home": "Home",
     "services": "Services",
+    "labs": "Labs",
     "about": "About",
     "contact": "Contact",
     "letsTalk": "Let's Talk",
@@ -725,6 +726,92 @@
           "button": "Initiate Branding Project"
         }
       }
+    }
+  },
+  "labs": {
+    "badge": "R&D • Experimental Builds • Open Source",
+    "hero": {
+      "tag": "Ngarsa Labs // v1.0",
+      "title": "Engineering the Frontier of <ai>AI Agents</ai>, <adtech>Creative AdTech</adtech>, & <openSource>Open Tools</openSource>.",
+      "description": "Ngarsa Labs is our playground and open-source workshop. We hypothesize, prototype, and build production-grade libraries, automation engines, and experimental digital interfaces for ourselves, our ecosystem partners, and the global developer community.",
+      "ctaProjects": "Explore Prototypes",
+      "ctaManifesto": "Read Our Manifesto",
+      "stats": {
+        "packages": "Public Packages",
+        "experiments": "Live Experiments",
+        "impact": "Open Source Driven"
+      }
+    },
+    "manifesto": {
+      "badge": "Our Philosophy",
+      "title": "Why We Build In Public & Beyond Client Mandates",
+      "p1": "Modern agencies often wait for client briefs before touching cutting-edge tools. At Ngarsa Digital, we invert this dynamic. We believe that true technical mastery comes from unconstrained exploration—solving real friction in developer workflows, algorithmic advertising, and intelligent automation before it becomes mainstream.",
+      "p2": "Labs is our committed space to stress-test ideas without bureaucratic hesitation. Whether it's an AI model fine-tuning workflow for ad return on investment (ROI), zero-dependency browser state synchronizers, or friction-free customer chat triggers—we build, publish, and open our findings so digital businesses and developers can scale with conviction.",
+      "pillars": [
+        {
+          "tag": "01 // Autonomy",
+          "title": "Radical Pragmatism",
+          "description": "We don't build hype toys. Every experiment targets an acute bottleneck in advertising performance, web rendering, or developer ergonomics."
+        },
+        {
+          "tag": "02 // Velocity",
+          "title": "AI & Algorithmic Advertising",
+          "description": "Marrying predictive AI models with high-frequency creative ad tech to unlock non-linear ROI gains for fast-moving brands."
+        },
+        {
+          "tag": "03 // Ecosystem",
+          "title": "Open Source by Default",
+          "description": "Whenever we solve a cross-cutting problem that benefits builders everywhere, we package it, document it, and push it to npm and GitHub."
+        }
+      ]
+    },
+    "projects": {
+      "badge": "Public Repositories & Packages",
+      "title": "Engineered Tools & Working Prototypes",
+      "subtitle": "Discover our released npm packages, open-source utilities, and web widgets engineered for production.",
+      "filterAll": "All Projects",
+      "statusLive": "Live on npm",
+      "statusGithub": "Open Source",
+      "items": {
+        "polylinai": {
+          "title": "polylinai",
+          "tag": "AI • AdTech • ROI Optimization",
+          "platform": "npm package",
+          "description": "Specialized algorithmic package designed for polyline spatial analysis and ROI computational optimization within AI-assisted marketing and ad intelligence systems.",
+          "badge": "v1.0.2 / npm",
+          "highlight": "AI Advertising ROI Acceleration",
+          "installCmd": "npm install polylinai",
+          "url": "https://www.npmjs.com/package/polylinai",
+          "linkText": "View on npm"
+        },
+        "localStorageBrowser": {
+          "title": "local-storage-browser",
+          "tag": "Web Utilities • Browser Storage",
+          "platform": "npm package",
+          "description": "Lightweight, resilient browser storage wrapper providing type-safe key-value persistence, automatic JSON serialization, and cross-tab storage safety.",
+          "badge": "npm package",
+          "highlight": "Zero-Dependency Storage Utility",
+          "installCmd": "npm install local-storage-browser",
+          "url": "https://www.npmjs.com/package/local-storage-browser",
+          "linkText": "View on npm"
+        },
+        "whatsappWidget": {
+          "title": "widget (WhatsApp Popup)",
+          "tag": "Growth Tools • Web Conversion",
+          "platform": "GitHub Repository",
+          "description": "Embeddable, high-converting WhatsApp message popup widget for modern websites. Boosts lead capture and direct customer communications with frictionless mobile-first UI.",
+          "badge": "Open Source UI",
+          "highlight": "Instant Direct Conversion Widget",
+          "installCmd": "git clone https://github.com/ngarsa-digital/widget.git",
+          "url": "https://github.com/ngarsa-digital/widget",
+          "linkText": "View on GitHub"
+        }
+      }
+    },
+    "cta": {
+      "title": "Have an Experimental Concept or Seeking Co-R&D?",
+      "description": "We partner with visionary founders, digital enterprises, and technology teams to architect bespoke AI engines, custom ad tech platforms, and high-performance digital experiments.",
+      "button": "Collaborate With Us"
     }
   }
 }

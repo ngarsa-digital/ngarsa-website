@@ -11,6 +11,7 @@
     "brand": "Ngarsa",
     "home": "Beranda",
     "services": "Layanan",
+    "labs": "Labs",
     "about": "Tentang",
     "contact": "Kontak",
     "letsTalk": "Mari Bicara",
@@ -725,6 +726,92 @@
           "button": "Mulai Proyek Branding"
         }
       }
+    }
+  },
+  "labs": {
+    "badge": "Litbang • Eksperimen Digital • Sumber Terbuka",
+    "hero": {
+      "tag": "Ngarsa Labs // v1.0",
+      "title": "Membangun Garda Terdepan <ai>Agen AI</ai>, <adtech>AdTech Kreatif</adtech>, & <openSource>Tools Terbuka</openSource>.",
+      "description": "Ngarsa Labs adalah arena riset dan workshop open-source kami. Kami menguji hipotesis, membangun purwarupa, dan menciptakan pustaka berkualitas produksi, mesin otomasi, serta antarmuka digital eksperimental untuk kami, mitra ekosistem, dan komunitas developer global.",
+      "ctaProjects": "Jelajahi Prototipe",
+      "ctaManifesto": "Baca Manifesto Kami",
+      "stats": {
+        "packages": "Paket Publik",
+        "experiments": "Eksperimen Aktif",
+        "impact": "Berbasis Open Source"
+      }
+    },
+    "manifesto": {
+      "badge": "Filosofi Kami",
+      "title": "Mengapa Kami Membangun Secara Terbuka & Melampaui Mandat Klien",
+      "p1": "Agensi konvensional kerap menunggu brief klien sebelum menyentuh instrumen teknologi mutakhir. Di Ngarsa Digital, kami membalik dinamika ini. Kami percaya bahwa penguasaan teknologi sejati lahir dari eksplorasi tanpa batas—memecahkan friksi nyata dalam alur kerja developer, periklanan algoritmik, dan otomasi cerdas jauh sebelum menjadi arus utama.",
+      "p2": "Labs adalah wadah komitmen kami untuk menguji ide tanpa hambatan birokrasi. Mulai dari alur optimasi AI untuk return on investment (ROI) iklan, sinkronisasi state peramban tanpa dependensi pihak ketiga, hingga pemicu pesan instan konversi tinggi—kami membangun, merilis, dan membagikan temuan kami agar bisnis dan pengembang digital dapat berekspansi dengan mantap.",
+      "pillars": [
+        {
+          "tag": "01 // Otonomi",
+          "title": "Pragmatisme Radikal",
+          "description": "Kami tidak membuat sekadar eksperimen tren. Setiap alat menjawab hambatan performa periklanan, komputasi web, atau ergonomi rekayasa perangkat lunak."
+        },
+        {
+          "tag": "02 // Akselerasi",
+          "title": "AI & Periklanan Algoritmik",
+          "description": "Menyatukan model prediktif AI dengan teknologi iklan berfrekuensi tinggi guna melipatgandakan ROI bagi brand yang bergerak cepat."
+        },
+        {
+          "tag": "03 // Ekosistem",
+          "title": "Terbuka Sejak Awal",
+          "description": "Tatkala kami memecahkan masalah mendasar yang bermanfaat bagi komunitas developer, kami mengemasnya rapi dan menerbitkannya ke npm dan GitHub."
+        }
+      ]
+    },
+    "projects": {
+      "badge": "Repositori & Paket Publik",
+      "title": "Pustaka Rekayasa & Prototipe Berjalan",
+      "subtitle": "Temukan paket npm terbitan kami, utilitas open-source, dan widget web yang dirancang siap untuk lingkungan produksi.",
+      "filterAll": "Semua Proyek",
+      "statusLive": "Tersedia di npm",
+      "statusGithub": "Open Source",
+      "items": {
+        "polylinai": {
+          "title": "polylinai",
+          "tag": "AI • AdTech • Optimasi ROI",
+          "platform": "Paket npm",
+          "description": "Paket algoritma khusus untuk analisis spasial polyline dan optimasi komputasi ROI dalam sistem kecerdasan buatan periklanan serta pemetaan analitik.",
+          "badge": "v1.0.2 / npm",
+          "highlight": "Akselerasi ROI Periklanan AI",
+          "installCmd": "npm install polylinai",
+          "url": "https://www.npmjs.com/package/polylinai",
+          "linkText": "Lihat di npm"
+        },
+        "localStorageBrowser": {
+          "title": "local-storage-browser",
+          "tag": "Utilitas Web • Penyimpanan Peramban",
+          "platform": "Paket npm",
+          "description": "Wrapper penyimpanan browser yang ringan dan andal, menyediakan persistensi key-value aman secara tipe data, serialisasi JSON otomatis, dan ketahanan multi-tab.",
+          "badge": "Paket npm",
+          "highlight": "Utilitas Penyimpanan Tanpa Dependensi",
+          "installCmd": "npm install local-storage-browser",
+          "url": "https://www.npmjs.com/package/local-storage-browser",
+          "linkText": "Lihat di npm"
+        },
+        "whatsappWidget": {
+          "title": "widget (Popup WhatsApp)",
+          "tag": "Alat Pertumbuhan • Konversi Web",
+          "platform": "Repositori GitHub",
+          "description": "Widget popup percakapan WhatsApp siap pasang yang memaksimalkan konversi untuk website modern. Mempercepat akuisisi prospek dengan UI mobile-friendly yang mulus.",
+          "badge": "UI Open Source",
+          "highlight": "Widget Konversi Langsung Responsif",
+          "installCmd": "git clone https://github.com/ngarsa-digital/widget.git",
+          "url": "https://github.com/ngarsa-digital/widget",
+          "linkText": "Lihat di GitHub"
+        }
+      }
+    },
+    "cta": {
+      "title": "Memiliki Konsep Eksperimen atau Mencari Kolaborasi R&D?",
+      "description": "Kami bermitra dengan para pendiri visioner, perusahaan digital, dan tim teknologi untuk merancang mesin AI khusus, platform ad-tech kustom, dan eksperimen digital berdampak tinggi.",
+      "button": "Kolaborasi Dengan Kami"
     }
   }
 }
