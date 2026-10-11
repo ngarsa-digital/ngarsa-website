@@ -746,17 +746,17 @@
       "badge": "Our Philosophy",
       "title": "Why We Build In Public & Beyond Client Mandates",
       "p1": "Modern agencies often wait for client briefs before touching cutting-edge tools. At Ngarsa Digital, we invert this dynamic. We believe that true technical mastery comes from unconstrained exploration—solving real friction in developer workflows, algorithmic advertising, and intelligent automation before it becomes mainstream.",
-      "p2": "Labs is our committed space to stress-test ideas without bureaucratic hesitation. Whether it's an AI model fine-tuning workflow for ad return on investment (ROI), zero-dependency browser state synchronizers, or friction-free customer chat triggers—we build, publish, and open our findings so digital businesses and developers can scale with conviction.",
+      "p2": "Labs is our committed space to stress-test ideas without bureaucratic hesitation. Whether it's interactive polygon detection zones for Computer Vision streams, zero-dependency browser state synchronizers, or friction-free customer chat triggers—we build, publish, and open our findings so digital businesses and developers can scale with conviction.",
       "pillars": [
         {
           "tag": "01 // Autonomy",
           "title": "Radical Pragmatism",
-          "description": "We don't build hype toys. Every experiment targets an acute bottleneck in advertising performance, web rendering, or developer ergonomics."
+          "description": "We don't build hype toys. Every experiment targets an acute bottleneck in computer vision, web rendering, or developer ergonomics."
         },
         {
           "tag": "02 // Velocity",
-          "title": "AI & Algorithmic Advertising",
-          "description": "Marrying predictive AI models with high-frequency creative ad tech to unlock non-linear ROI gains for fast-moving brands."
+          "title": "Applied AI & Engineering",
+          "description": "Building interactive tools, computer vision utilities, and intelligent automation systems to unlock new capabilities for technical teams."
         },
         {
           "tag": "03 // Ecosystem",
@@ -775,11 +775,11 @@
       "items": {
         "polylinai": {
           "title": "polylinai",
-          "tag": "AI • AdTech • ROI Optimization",
+          "tag": "Computer Vision • Detection Zones • Annotation",
           "platform": "npm package",
-          "description": "Specialized algorithmic package designed for polyline spatial analysis and ROI computational optimization within AI-assisted marketing and ad intelligence systems.",
+          "description": "PolylinAI enables users to interactively draw, adjust, and configure custom detection zones and directional tripwires over live camera feeds, recorded videos, or static frames. It exports standardized geometric and directional metadata for Computer Vision pipelines (YOLO, OpenCV, Roboflow, Supervision).",
           "badge": "v1.0.2 / npm",
-          "highlight": "AI Advertising ROI Acceleration",
+          "highlight": "CV Detection Zones & Directional Tripwires",
           "installCmd": "npm install polylinai",
           "url": "https://www.npmjs.com/package/polylinai",
           "linkText": "View on npm"

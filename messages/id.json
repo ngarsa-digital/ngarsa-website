@@ -746,17 +746,17 @@
       "badge": "Filosofi Kami",
       "title": "Mengapa Kami Membangun Secara Terbuka & Melampaui Mandat Klien",
       "p1": "Agensi konvensional kerap menunggu brief klien sebelum menyentuh instrumen teknologi mutakhir. Di Ngarsa Digital, kami membalik dinamika ini. Kami percaya bahwa penguasaan teknologi sejati lahir dari eksplorasi tanpa batas—memecahkan friksi nyata dalam alur kerja developer, periklanan algoritmik, dan otomasi cerdas jauh sebelum menjadi arus utama.",
-      "p2": "Labs adalah wadah komitmen kami untuk menguji ide tanpa hambatan birokrasi. Mulai dari alur optimasi AI untuk return on investment (ROI) iklan, sinkronisasi state peramban tanpa dependensi pihak ketiga, hingga pemicu pesan instan konversi tinggi—kami membangun, merilis, dan membagikan temuan kami agar bisnis dan pengembang digital dapat berekspansi dengan mantap.",
+      "p2": "Labs adalah wadah komitmen kami untuk menguji ide tanpa hambatan birokrasi. Mulai dari konfigurasi zona deteksi poligon interaktif untuk stream Computer Vision, sinkronisasi state peramban tanpa dependensi pihak ketiga, hingga pemicu pesan instan konversi tinggi—kami membangun, merilis, dan membagikan temuan kami agar bisnis dan pengembang digital dapat berekspansi dengan mantap.",
       "pillars": [
         {
           "tag": "01 // Otonomi",
           "title": "Pragmatisme Radikal",
-          "description": "Kami tidak membuat sekadar eksperimen tren. Setiap alat menjawab hambatan performa periklanan, komputasi web, atau ergonomi rekayasa perangkat lunak."
+          "description": "Kami tidak membuat sekadar eksperimen tren. Setiap alat menjawab hambatan nyata pada computer vision, komputasi web, atau ergonomi rekayasa perangkat lunak."
         },
         {
           "tag": "02 // Akselerasi",
-          "title": "AI & Periklanan Algoritmik",
-          "description": "Menyatukan model prediktif AI dengan teknologi iklan berfrekuensi tinggi guna melipatgandakan ROI bagi brand yang bergerak cepat."
+          "title": "AI Terapan & Rekayasa Perangkat Lunak",
+          "description": "Membangun utilitas interaktif, alat Computer Vision, dan sistem otomasi cerdas untuk membuka kapabilitas baru bagi tim teknis."
         },
         {
           "tag": "03 // Ekosistem",
@@ -775,11 +775,11 @@
       "items": {
         "polylinai": {
           "title": "polylinai",
-          "tag": "AI • AdTech • Optimasi ROI",
+          "tag": "Computer Vision • Zona Deteksi • Anotasi",
           "platform": "Paket npm",
-          "description": "Paket algoritma khusus untuk analisis spasial polyline dan optimasi komputasi ROI dalam sistem kecerdasan buatan periklanan serta pemetaan analitik.",
+          "description": "PolylinAI memungkinkan pengguna menggambar, menyesuaikan, dan mengonfigurasi zona deteksi kustom serta tripwire directional secara interaktif di atas feed kamera langsung, rekaman video, atau frame statis. Mengekspor metadata geometris dan arah terstandarisasi untuk pipeline Computer Vision (YOLO, OpenCV, Roboflow, Supervision).",
           "badge": "v1.0.2 / npm",
-          "highlight": "Akselerasi ROI Periklanan AI",
+          "highlight": "Zona Deteksi CV & Tripwire Arah",
           "installCmd": "npm install polylinai",
           "url": "https://www.npmjs.com/package/polylinai",
           "linkText": "Lihat di npm"

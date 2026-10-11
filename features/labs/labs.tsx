@@ -20,7 +20,7 @@ export const Labs = async () => {
       icon: "polyline",
       colorBg: "bg-surface-container-lowest",
       badgeColor: "bg-primary text-on-primary",
-      category: "AI & ADTECH",
+      category: "COMPUTER VISION & AI",
     },
     {
       id: "local-storage-browser",
@@ -175,25 +175,22 @@ export const Labs = async () => {
                   </span>
                 </div>
 
-                {/* Circuit / Vector AI AdTech Nodes Diagram */}
+                {/* Circuit / Vector AI Vision Nodes Diagram */}
                 <div className="bg-inverse-surface text-inverse-on-surface p-4 border-3 border-inverse-surface font-mono text-xs space-y-2 relative overflow-hidden">
                   <div className="text-primary-fixed-dim font-bold flex items-center justify-between">
-                    <span>&gt; pipeline: ai-marketing-adtech.agent</span>
+                    <span>&gt; pipeline: cv-vision-zones.stream</span>
                     <span className="text-[10px] text-white/60">NODE_01</span>
                   </div>
                   <div className="text-white/80 text-[11px]">
-                    [ok] spatial_roi: initialized via{" "}
+                    [ok] detection_zones: configured via{" "}
                     <span className="text-primary-fixed">@polylinai</span>
+                  </div>
+                  <div className="text-white/80 text-[11px]">
+                    [ok] cv_export: JSON/YOLO polygons & tripwires ready
                   </div>
                   <div className="text-white/80 text-[11px]">
                     [ok] state_cache: synchronizing via{" "}
                     <span className="text-secondary-fixed">@local-storage</span>
-                  </div>
-                  <div className="text-white/80 text-[11px]">
-                    [ok] omni_channel: chat webhook connected{" "}
-                    <span className="text-tertiary-fixed">
-                      @whatsapp_widget
-                    </span>
                   </div>
                   <div className="h-1.5 w-full bg-white/20 overflow-hidden mt-3 border border-white/40">
                     <div className="h-full bg-primary-fixed w-3/4 animate-pulse" />
@@ -205,15 +202,15 @@ export const Labs = async () => {
                   <div className="bg-secondary-fixed border-3 border-inverse-surface p-3 shadow-[3px_3px_0px_0px_rgba(46,49,49,1)]">
                     <div className="flex items-center gap-1.5 text-xs font-label-bold text-on-secondary-fixed mb-1 uppercase">
                       <span className="material-symbols-outlined text-[16px]">
-                        psychology
+                        polyline
                       </span>
-                      AI Models
+                      Computer Vision
                     </div>
                     <div className="font-headline-lg text-lg font-bold text-on-surface leading-tight">
-                      ROI Analysis
+                      Tripwire & Zones
                     </div>
                     <div className="text-[10px] text-on-secondary-fixed-variant mt-1 font-mono">
-                      Predictive Ad Performance
+                      YOLO • OpenCV • Roboflow
                     </div>
                   </div>
 
