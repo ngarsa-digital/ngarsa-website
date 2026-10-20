@@ -120,7 +120,10 @@ export async function generateMetadata({
       description: t("twitterDescription"),
       images: ["/images/og-image.png"],
     },
-    verification: { yandex: "997f78d123f13810" },
+    verification: {
+      google: "-6rFhK9grHMIIv6nBE1t5BY-HvloWNOhQVq777yrkAc",
+      yandex: "997f78d123f13810",
+    },
     other: {
       "geo.region": "ID-JB",
       "geo.placename": "Jatinangor, Sumedang",
