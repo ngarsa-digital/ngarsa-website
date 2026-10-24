@@ -2,10 +2,29 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
 import { GenerativeLightShader } from "@/features/labs/generative-light-shader";
 
+type Project = {
+  id: string;
+  title: string;
+  tag: string;
+  platform: string;
+  description: string;
+  badge: string;
+  highlight: string;
+  installCmd: string;
+  url: string;
+  linkText: string;
+  websiteUrl?: string;
+  websiteLinkText?: string;
+  icon: string;
+  colorBg: string;
+  badgeColor: string;
+  category: string;
+};
+
 export const Labs = async () => {
   const t = await getTranslations("labs");
 
-  const projects = [
+  const projects: Project[] = [
     {
       id: "polylinai",
       title: t("projects.items.polylinai.title"),
@@ -49,6 +68,8 @@ export const Labs = async () => {
       installCmd: t("projects.items.whatsappWidget.installCmd"),
       url: t("projects.items.whatsappWidget.url"),
       linkText: t("projects.items.whatsappWidget.linkText"),
+      websiteUrl: t("projects.items.whatsappWidget.websiteUrl"),
+      websiteLinkText: t("projects.items.whatsappWidget.websiteLinkText"),
       icon: "chat",
       colorBg: "bg-surface-container-lowest",
       badgeColor: "bg-secondary text-white",
@@ -386,7 +407,7 @@ export const Labs = async () => {
                   </p>
                 </div>
 
-                {/* Bottom Install Command Box & Live Button */}
+                {/* Bottom Install Command Box & Action Buttons */}
                 <div className="space-y-4 pt-4 border-t-2 border-inverse-surface/20">
                   {/* Code snippet command */}
                   <div className="bg-inverse-surface text-surface px-3.5 py-2.5 border-2 border-inverse-surface font-mono text-xs flex items-center justify-between overflow-x-auto">
@@ -398,18 +419,38 @@ export const Labs = async () => {
                     </span>
                   </div>
 
-                  {/* Action Link */}
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary py-3 px-4 border-3 border-inverse-surface brutalist-shadow-sm font-label-bold text-xs uppercase tracking-wider hover:bg-primary-fixed hover:text-inverse-surface transition-colors"
-                  >
-                    <span>{item.linkText}</span>
-                    <span className="material-symbols-outlined text-[16px]">
-                      open_in_new
-                    </span>
-                  </a>
+                  {/* Action Link(s) */}
+                  <div className="flex flex-col gap-2.5">
+                    {item.websiteUrl && (
+                      <a
+                        href={item.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary py-3 px-4 border-3 border-inverse-surface brutalist-shadow-sm font-label-bold text-xs uppercase tracking-wider hover:bg-primary-fixed hover:text-inverse-surface transition-colors"
+                      >
+                        <span>{item.websiteLinkText}</span>
+                        <span className="material-symbols-outlined text-[16px]">
+                          open_in_new
+                        </span>
+                      </a>
+                    )}
+
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full inline-flex items-center justify-center gap-2 py-3 px-4 border-3 border-inverse-surface brutalist-shadow-sm font-label-bold text-xs uppercase tracking-wider transition-colors ${
+                        item.websiteUrl
+                          ? "bg-surface text-on-surface hover:bg-inverse-surface hover:text-white"
+                          : "bg-primary text-on-primary hover:bg-primary-fixed hover:text-inverse-surface"
+                      }`}
+                    >
+                      <span>{item.linkText}</span>
+                      <span className="material-symbols-outlined text-[16px]">
+                        open_in_new
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

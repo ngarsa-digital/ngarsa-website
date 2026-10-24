@@ -804,7 +804,9 @@
           "highlight": "Instant Direct Conversion Widget",
           "installCmd": "git clone https://github.com/ngarsa-digital/widget.git",
           "url": "https://github.com/ngarsa-digital/widget",
-          "linkText": "View on GitHub"
+          "linkText": "View on GitHub",
+          "websiteUrl": "https://widget.ngarsa.com",
+          "websiteLinkText": "Visit Website"
         }
       }
     },
